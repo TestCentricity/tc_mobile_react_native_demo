@@ -4,7 +4,7 @@ This is a Cucumber based sample test suite and framework utilizing the TestCentr
 model architecture for native mobile app functional testing of the [Sauce Labs React Native Demo app](https://github.com/saucelabs/my-demo-app-rn). The tests in
 this example project are designed to support testing of [version 1.3.0](https://github.com/saucelabs/my-demo-app-rn/releases/tag/v1.3.0) of the Sauce Labs React Native Demo app.
 
-![React Native Demo app](https://raw.githubusercontent.com/TestCentricity/tc_mobile_react_native_demo/main/.github/images/RN_Demo_app.png) "React Native Demo app")
+![React Native Demo app](https://raw.githubusercontent.com/TestCentricity/tc_mobile_react_native_demo/main/.github/images/RN_Demo_app.png)
 
 The primary purpose of this example test suite and framework is to demonstrate how to implement a cross platform comprehensive
 automated testing solution for a React Native iOS and Android mobile app using Cucumber, Appium, and the TestCentricity™ Mobile
