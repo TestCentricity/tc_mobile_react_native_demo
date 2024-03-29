@@ -1,0 +1,25 @@
+
+# OSX folder stuff
+.DS_Store
+Thumbs.db
+
+#IDE project files
+/.idea/
+.settings
+.project
+
+# emacs backup files
+*~
+
+# Ignore test-reports
+target/
+reports/*.html
+reports/*.xml
+reports/*.json
+reports/screenshots/
+test-reports
+debug.log
+
+/.yardoc/
+/local.log
+.run/*.xml

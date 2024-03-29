@@ -1,0 +1,394 @@
+# This section is populated with Environment data required to execute automated test suites on all supported environments
+Environments:
+  LOCAL:
+    DEEP_LINK_PREFIX: 'mydemoapprn'
+    IOS_BUNDLE_ID: 'com.saucelabs.mydemoapp.rn'
+    IOS_APP_PATH: '/Users/Shared/Test_Apps/iOS/MyRNDemoApp.app'
+    IOS_IPA_PATH: '/Users/Shared/Test_Apps/iOS/iOS-Real-Device-MyRNDemoApp.1.3.0-162.ipa'
+    IOS_TEST_ID: 'RNDemoAppiOS'
+    ANDROID_APP_ID: 'com.saucelabs.mydemoapp.rn'
+    ANDROID_APK_PATH: '/Users/Shared/Test_Apps/Android/Android-MyDemoAppRN.1.3.0.build-244.apk'
+    ANDROID_TEST_ID: 'RNDemoAppAndroid'
+
+# This section is populated with Capabilities data used for establishing connections to locally hosted iOS simulators
+# and Android virtual devices
+Capabilities:
+  iPhone:
+    :device_type: :phone
+    :driver: :appium
+    :driver_name: :iphone_driver
+    :capabilities:
+      :platformName: :ios
+      :'appium:platformVersion': '15.4'
+      :'appium:deviceName': 'iPhone 13 Pro Max'
+      :'appium:automationName': 'XCUITest'
+      :'appium:app': '/Users/Shared/Test_Apps/iOS/MyRNDemoApp.app'
+      :'appium:noReset': true
+  android_phone:
+    :device_type: :phone
+    :driver: :appium
+    :driver_name: :android_phone_driver
+    :capabilities:
+      :platformName: :android
+      :'appium:platformVersion': '12.0'
+      :'appium:deviceName': 'Pixel_5_API_31'
+      :'appium:avd': 'Pixel_5_API_31'
+      :'appium:automationName': 'UiAutomator2'
+      :'appium:app': '/Users/Shared/Test_Apps/Android/Android-MyDemoAppRN.1.3.0.build-244.apk'
+      :'appium:chromedriverExecutable': '/Users/Shared/config/webdrivers/chromedriver'
+      :'appium:noReset': true
+
+# This section is populated with user credential data required to test the Login screen features
+User_creds:
+  valid_data:
+    username: 'bob@example.com'
+    password: '10203040'
+    full_name: 'Bob Loblaw'
+    ship_address_1: '52324 NE 14th'
+    ship_address_2: 'Apt #323'
+    ship_city: 'Cortes Island'
+    ship_state: 'British Columbia'
+    ship_zip_code: 'V0P1K0'
+    ship_country: 'Canada'
+    cardholder_name: 'Robert Loblaw'
+    card_num: '5300 0000 0000 0006'
+    expiry: '12/30'
+    cvv: '987'
+  invalid_user:
+    username: 'iggy.snicklefritz@example.com'
+    password: '10203040'
+  locked_account:
+    username: 'alice@example.com'
+    password: '10203040'
+  no_username:
+    password: '10203040'
+  no_password:
+    username: 'bob@example.com'
+  no_full_name:
+    username: 'bob@example.com'
+    password: '10203040'
+    ship_address_1: '52324 NE 14th'
+    ship_address_2: 'Apt #323'
+    ship_city: 'Cortes Island'
+    ship_state: 'British Columbia'
+    ship_zip_code: 'V0P1K0'
+    ship_country: 'Canada'
+  no_delivery_address:
+    username: 'bob@example.com'
+    password: '10203040'
+    full_name: 'Bob Loblaw'
+    ship_city: 'Cortes Island'
+    ship_state: 'British Columbia'
+    ship_zip_code: 'V0P1K0'
+    ship_country: 'Canada'
+  no_delivery_city:
+    username: 'bob@example.com'
+    password: '10203040'
+    full_name: 'Bob Loblaw'
+    ship_address_1: '52324 NE 14th'
+    ship_address_2: 'Apt #323'
+    ship_state: 'British Columbia'
+    ship_zip_code: 'V0P1K0'
+    ship_country: 'Canada'
+  no_delivery_zip_code:
+    username: 'bob@example.com'
+    password: '10203040'
+    full_name: 'Bob Loblaw'
+    ship_address_1: '52324 NE 14th'
+    ship_address_2: 'Apt #323'
+    ship_city: 'Cortes Island'
+    ship_state: 'British Columbia'
+    ship_country: 'Canada'
+  no_delivery_country:
+    username: 'bob@example.com'
+    password: '10203040'
+    full_name: 'Bob Loblaw'
+    ship_address_1: '52324 NE 14th'
+    ship_address_2: 'Apt #323'
+    ship_city: 'Cortes Island'
+    ship_state: 'British Columbia'
+    ship_zip_code: 'V0P1K0'
+  no_cardholder_name:
+    username: 'bob@example.com'
+    password: '10203040'
+    full_name: 'Bob Loblaw'
+    ship_address_1: '52324 NE 14th'
+    ship_address_2: 'Apt #323'
+    ship_city: 'Cortes Island'
+    ship_state: 'British Columbia'
+    ship_zip_code: 'V0P1K0'
+    ship_country: 'Canada'
+    card_num: '5300 0000 0000 0006'
+    expiry: '12/30'
+    cvv: '987'
+  no_card_number:
+    username: 'bob@example.com'
+    password: '10203040'
+    full_name: 'Bob Loblaw'
+    ship_address_1: '52324 NE 14th'
+    ship_address_2: 'Apt #323'
+    ship_city: 'Cortes Island'
+    ship_state: 'British Columbia'
+    ship_zip_code: 'V0P1K0'
+    ship_country: 'Canada'
+    cardholder_name: 'Robert Loblaw'
+    card_num: ' '
+    expiry: '12/30'
+    cvv: '987'
+  no_expiration:
+    username: 'bob@example.com'
+    password: '10203040'
+    full_name: 'Bob Loblaw'
+    ship_address_1: '52324 NE 14th'
+    ship_address_2: 'Apt #323'
+    ship_city: 'Cortes Island'
+    ship_state: 'British Columbia'
+    ship_zip_code: 'V0P1K0'
+    ship_country: 'Canada'
+    cardholder_name: 'Robert Loblaw'
+    card_num: '5300 0000 0000 0006'
+    expiry: ' '
+    cvv: '987'
+  no_cvv:
+    username: 'bob@example.com'
+    password: '10203040'
+    full_name: 'Bob Loblaw'
+    ship_address_1: '52324 NE 14th'
+    ship_address_2: 'Apt #323'
+    ship_city: 'Cortes Island'
+    ship_state: 'British Columbia'
+    ship_zip_code: 'V0P1K0'
+    ship_country: 'Canada'
+    cardholder_name: 'Robert Loblaw'
+    card_num: '5300 0000 0000 0006'
+    expiry: '12/30'
+  placeholder:
+    full_name: 'Rebecca Winter'
+    ship_address_1: 'Mandorley 112'
+    ship_address_2: 'Entrance 1'
+    ship_city: 'Truro'
+    ship_state: 'Cornwall'
+    ship_zip_code: '89750'
+    ship_country: 'United Kingdom'
+    cardholder_name: 'Rebecca Winter'
+    card_num: '5555555555554444'
+    expiry: '0325'
+    cvv: '123'
+  valid_billing_data:
+    username: 'bob@example.com'
+    password: '10203040'
+    full_name: 'Bob Loblaw'
+    ship_address_1: '52324 NE 14th'
+    ship_address_2: 'Apt #323'
+    ship_city: 'Cortes Island'
+    ship_state: 'British Columbia'
+    ship_zip_code: 'V0P1K0'
+    ship_country: 'Canada'
+    cardholder_name: 'Robert Loblaw'
+    card_num: '5300 0000 0000 0006'
+    expiry: '12/30'
+    cvv: '987'
+    bill_name: 'Bob Loblaw'
+    bill_address_1: '1624 Ebola Rd'
+    bill_address_2: 'Suite #213'
+    bill_city: 'Campbell River'
+    bill_state: 'British Columbia'
+    bill_zip_code: 'V9H0A1'
+    bill_country: 'Canada'
+  no_billing_name:
+    username: 'bob@example.com'
+    password: '10203040'
+    full_name: 'Bob Loblaw'
+    ship_address_1: '52324 NE 14th'
+    ship_address_2: 'Apt #323'
+    ship_city: 'Cortes Island'
+    ship_state: 'British Columbia'
+    ship_zip_code: 'V0P1K0'
+    ship_country: 'Canada'
+    cardholder_name: 'Robert Loblaw'
+    card_num: '5300 0000 0000 0006'
+    expiry: '12/30'
+    cvv: '987'
+    bill_address_1: '1624 Ebola Rd'
+    bill_address_2: 'Suite #213'
+    bill_city: 'Campbell River'
+    bill_state: 'British Columbia'
+    bill_zip_code: 'V9H0A1'
+    bill_country: 'Canada'
+  no_billing_address:
+    username: 'bob@example.com'
+    password: '10203040'
+    full_name: 'Bob Loblaw'
+    ship_address_1: '52324 NE 14th'
+    ship_address_2: 'Apt #323'
+    ship_city: 'Cortes Island'
+    ship_state: 'British Columbia'
+    ship_zip_code: 'V0P1K0'
+    ship_country: 'Canada'
+    cardholder_name: 'Robert Loblaw'
+    card_num: '5300 0000 0000 0006'
+    expiry: '12/30'
+    cvv: '987'
+    bill_name: 'Bob Loblaw'
+    bill_city: 'Campbell River'
+    bill_state: 'British Columbia'
+    bill_zip_code: 'V9H0A1'
+    bill_country: 'Canada'
+  no_billing_city:
+    username: 'bob@example.com'
+    password: '10203040'
+    full_name: 'Bob Loblaw'
+    ship_address_1: '52324 NE 14th'
+    ship_address_2: 'Apt #323'
+    ship_city: 'Cortes Island'
+    ship_state: 'British Columbia'
+    ship_zip_code: 'V0P1K0'
+    ship_country: 'Canada'
+    cardholder_name: 'Robert Loblaw'
+    card_num: '5300 0000 0000 0006'
+    expiry: '12/30'
+    cvv: '987'
+    bill_name: 'Bob Loblaw'
+    bill_address_1: '1624 Ebola Rd'
+    bill_address_2: 'Suite #213'
+    bill_state: 'British Columbia'
+    bill_zip_code: 'V9H0A1'
+    bill_country: 'Canada'
+  no_billing_zip_code:
+    username: 'bob@example.com'
+    password: '10203040'
+    full_name: 'Bob Loblaw'
+    ship_address_1: '52324 NE 14th'
+    ship_address_2: 'Apt #323'
+    ship_city: 'Cortes Island'
+    ship_state: 'British Columbia'
+    ship_zip_code: 'V0P1K0'
+    ship_country: 'Canada'
+    cardholder_name: 'Robert Loblaw'
+    card_num: '5300 0000 0000 0006'
+    expiry: '12/30'
+    cvv: '987'
+    bill_name: 'Bob Loblaw'
+    bill_address_1: '1624 Ebola Rd'
+    bill_address_2: 'Suite #213'
+    bill_city: 'Campbell River'
+    bill_state: 'British Columbia'
+    bill_country: 'Canada'
+  no_billing_country:
+    username: 'bob@example.com'
+    password: '10203040'
+    full_name: 'Bob Loblaw'
+    ship_address_1: '52324 NE 14th'
+    ship_address_2: 'Apt #323'
+    ship_city: 'Cortes Island'
+    ship_state: 'British Columbia'
+    ship_zip_code: 'V0P1K0'
+    ship_country: 'Canada'
+    cardholder_name: 'Robert Loblaw'
+    card_num: '5300 0000 0000 0006'
+    expiry: '12/30'
+    cvv: '987'
+    bill_name: 'Bob Loblaw'
+    bill_address_1: '1624 Ebola Rd'
+    bill_address_2: 'Suite #213'
+    bill_city: 'Campbell River'
+    bill_state: 'British Columbia'
+    bill_zip_code: 'V9H0A1'
+
+# This section is populated with Product data required for testing the Shopping features
+Products:
+  '1':
+    id: 1
+    name: 'Sauce Labs Backpack'
+    description: 'carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.'
+    price: 29.99
+    review: 4
+    colors: ['BLACK', 'BLUE', 'GRAY', 'RED']
+    default_color: 'BLACK'
+  '2':
+    id: 2
+    name: 'Sauce Labs Bike Light'
+    description: "A red light isn't the desired state in testing but it sure helps when riding your bike at night. Water-resistant with 3 lighting modes, 1 AAA battery included."
+    price: 9.99
+    review: 4
+    colors: ['BLACK']
+    default_color: 'BLACK'
+  '3':
+    id: 3
+    name: 'Sauce Labs Bolt T-Shirt'
+    description: 'Get your testing superhero on with the Sauce Labs bolt T-shirt. From American Apparel, 100% ringspun combed cotton, heather gray with red bolt.'
+    price: 15.99
+    review: 4
+    colors: ['BLACK']
+    default_color: 'BLACK'
+  '4':
+    id: 4
+    name: 'Sauce Labs Fleece Jacket'
+    description: "It's not every day that you come across a midweight quarter-zip fleece jacket capable of handling everything from a relaxing day outdoors to a busy day at the office."
+    price: 49.99
+    review: 4
+    colors: ['GRAY']
+    default_color: 'GRAY'
+  '5':
+    id: 5
+    name: 'Sauce Labs Onesie'
+    description: "Rib snap infant onesie for the junior automation engineer in development. Reinforced 3-snap bottom closure, two-needle hemmed sleeved and bottom won't unravel."
+    price: 7.99
+    review: 4
+    colors: ['BLACK', 'GRAY', 'RED']
+    default_color: 'RED'
+  '6':
+    id: 6
+    name: 'Test.allTheThings() T-Shirt'
+    description: 'This classic Sauce Labs t-shirt is perfect to wear when cozying up to your keyboard to automate a few tests. Super-soft and comfy ringspun combed cotton.'
+    price: 15.99
+    review: 4
+    colors: ['BLACK', 'GRAY', 'RED']
+    default_color: 'RED'
+
+# This section is populated with Cart data required for testing the Shopping Cart features
+Cart_data:
+  1_item:
+    cart_items_deep_link: 'id=6&amount=1'
+    num_items: 1
+    total_quantity: 1
+    total_price: 15.99
+    delivery_price: 5.99
+    cart_items: ["1 - Test.allTheThings() T-Shirt - $15.99 - RED"]
+    order_items: ["Test.allTheThings() T-Shirt - $15.99 - RED"]
+  2_items:
+    cart_items_deep_link: 'id=4&amount=1,id=3&amount=1'
+    num_items: 2
+    total_quantity: 2
+    total_price: 65.98
+    delivery_price: 5.99
+    cart_items: ["1 - Sauce Labs Fleece Jacket - $49.99 - GRAY",
+                 "1 - Sauce Labs Bolt T-Shirt - $15.99 - BLACK"]
+    order_items: ["Sauce Labs Fleece Jacket - $49.99 - GRAY",
+                  "Sauce Labs Bolt T-Shirt - $15.99 - BLACK"]
+  3_items:
+    cart_items_deep_link: 'id=1&amount=1&color=blue,id=1&amount=1&color=red,id=3&amount=2&color=black'
+    num_items: 3
+    total_quantity: 4
+    total_price: 91.96
+    delivery_price: 5.99
+    cart_items: ["1 - Sauce Labs Backpack - $29.99 - BLUE",
+                 "1 - Sauce Labs Backpack - $29.99 - RED",
+                 "2 - Sauce Labs Bolt T-Shirt - $15.99 - BLACK"]
+    order_items: ["Sauce Labs Backpack - $29.99 - BLUE",
+                  "Sauce Labs Backpack - $29.99 - RED",
+                  "Sauce Labs Bolt T-Shirt - $15.99 - BLACK"]
+  4_items:
+    cart_items_deep_link: 'id=1&amount=1&color=blue,id=3&amount=2&color=black,id=1&amount=1&color=red,id=4&amount=1&color=gray'
+    num_items: 4
+    total_quantity: 5
+    total_price: 141.95
+    delivery_price: 5.99
+    cart_items: ["1 - Sauce Labs Backpack - $29.99 - BLUE",
+                 "2 - Sauce Labs Bolt T-Shirt - $15.99 - BLACK",
+                 "1 - Sauce Labs Backpack - $29.99 - RED",
+                 "1 - Sauce Labs Fleece Jacket - $49.99 - GRAY"]
+    order_items: ["Sauce Labs Backpack - $29.99 - BLUE",
+                  "Sauce Labs Bolt T-Shirt - $15.99 - BLACK",
+                  "Sauce Labs Backpack - $29.99 - RED",
+                  "Sauce Labs Fleece Jacket - $49.99 - GRAY"]

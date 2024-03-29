@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  File: README
+  
+    &mdash; Documentation by YARD 0.9.36
+  
+</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
+
+  <link rel="stylesheet" href="css/common.css" type="text/css" />
+
+  <link rel="stylesheet" href="css/cucumber.css" type="text/css" />
+
+<script type="text/javascript">
+  pathId = "README";
+  relpath = '';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/cucumber.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="file_list.html?1"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="_index.html">Index</a> &raquo; 
+    <span class="title">File: README</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="feature_list_link"
+        href="feature_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <div id="content"><div id='filecontents'><h1 id="tc_mobile_react_native_demo">tc_mobile_react_native_demo</h1>
+
+<p>This is a Cucumber based sample test suite and framework utilizing the TestCentricity™ Mobile gem and a screen-object
+model architecture for native mobile app functional testing of the <a href="https://github.com/saucelabs/my-demo-app-rn">Sauce Labs React Native Demo app</a>. The tests in
+this example project are designed to support testing of <a href="https://github.com/saucelabs/my-demo-app-rn/releases/tag/v1.3.0">version 1.3.0</a> of the Sauce Labs React Native Demo app.</p>
+
+<p><img src="https://raw.githubusercontent.com/TestCentricity/tc_mobile_react_native_demo/main/.github/images/RN_Demo_app.png" alt="React Native Demo app" title="React Native Demo app"></p>
+
+<p>The primary purpose of this example test suite and framework is to demonstrate how to implement a cross platform comprehensive
+automated testing solution for a React Native iOS and Android mobile app using Cucumber, Appium, and the TestCentricity™ Mobile
+gem. This test suite includes scenarios for interactive with and validating the following functionality:</p>
+
+<ul>
+<li>Choosing products and adding them to a shopping cart</li>
+<li>Completing orders once shipping and payment data have been provided</li>
+<li>Populating forms with data</li>
+<li>Navigation metaphors</li>
+<li>Verification of multiple properties of multiple screen UI elements</li>
+<li>Deep linking</li>
+<li>Drawing</li>
+<li>WebViews</li>
+<li>Logging in using Biometrics (Face ID on iOS only)</li>
+<li>Alert modals</li>
+</ul>
+
+<h2 id="gem-dependencies">Gem Dependencies:</h2>
+
+<p>cucumber  <a href="https://badge.fury.io/rb/cucumber"><img src="https://badge.fury.io/rb/cucumber.svg" alt="Gem Version"></a></p>
+
+<p>testcentricity_mobile  <a href="https://badge.fury.io/rb/testcentricity_mobile"><img src="https://badge.fury.io/rb/testcentricity_mobile.svg" alt="Gem Version"></a></p>
+
+<h2 id="supporting-documentation">Supporting Documentation</h2>
+
+<p><a href="https://rubygems.org/gems/testcentricity_mobile">TestCentricity Mobile Framework - testcentricity_mobile gem</a></p>
+
+<p><a href="http://www.rubydoc.info/gems/testcentricity_mobile/">TestCentricity Mobile - documentation</a></p>
+
+<h2 id="prerequisites-to-running-tests">Prerequisites to running tests:</h2>
+
+<p>The <code>tc_mobile_react_native_demo</code> test automation project supports running tests on iOS and Android simulators or physical
+devices. The capabilities profiles for running tests against an iPhone or Android phone are stored in the test data asset
+file located at <code>/config/test_data/data.yml</code>.</p>
+
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_📁'>📁</span> <span class='id identifier rubyid_tc_mobile_react_native_demo'>tc_mobile_react_native_demo</span>
+ <span class='id identifier rubyid_├──'>├──</span> <span class='id identifier rubyid_📁'>📁</span> <span class='id identifier rubyid_config'>config</span>
+ <span class='id identifier rubyid_│'>│</span>   <span class='id identifier rubyid_├──'>├──</span> <span class='id identifier rubyid_📁'>📁</span> <span class='id identifier rubyid_test_data'>test_data</span>
+ <span class='id identifier rubyid_│'>│</span>   <span class='id identifier rubyid_│'>│</span>    <span class='id identifier rubyid_└──'>└──</span> <span class='id identifier rubyid_📄'>📄</span> <span class='id identifier rubyid_data'>data</span><span class='period'>.</span><span class='id identifier rubyid_yml'>yml</span>
+ <span class='id identifier rubyid_│'>│</span>   <span class='id identifier rubyid_└──'>└──</span> <span class='id identifier rubyid_📄'>📄</span> <span class='id identifier rubyid_cucumber'>cucumber</span><span class='period'>.</span><span class='id identifier rubyid_yml'>yml</span>
+ <span class='id identifier rubyid_├──'>├──</span> <span class='id identifier rubyid_📁'>📁</span> <span class='id identifier rubyid_doc'>doc</span>
+ <span class='id identifier rubyid_└──'>└──</span> <span class='id identifier rubyid_📁'>📁</span> <span class='id identifier rubyid_features'>features</span>
+</code></pre>
+
+<p>In order for Cucumber to execute the features and scenarios in the <code>tc_mobile_react_native_demo</code> test automation project,
+you must install Appium, XCode, the iOS version-specific device simulators for XCode, Android Studio, and the desired Android
+version-specific virtual device emulators. The capabilities profiles in <code>data.yml</code>file are currently set to the following:</p>
+
+<table><thead>
+<tr>
+<th>Mobile device</th>
+<th>OS version (&#39;appium:platformVersion&#39;:)</th>
+<th>Device name (&#39;appium:deviceName&#39;: / &#39;appium:avd&#39;:)</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>:iPhone</code></td>
+<td>&#39;15.4&#39;</td>
+<td>&#39;iPhone 13 Pro Max&#39;</td>
+</tr>
+<tr>
+<td><code>:android_phone</code></td>
+<td>&#39;12.0&#39;</td>
+<td>&#39;Pixel_5_API_31&#39;</td>
+</tr>
+</tbody></table>
+
+<p>If you prefer to run tests against mobile devices using simulators other than the ones already preconfigured, you can
+edit the capabilities profiles in the <code>data.yml</code> file. Refer to <a href="https://www.rubydoc.info/gems/testcentricity_mobile#connecting-to-locally-hosted-simulators-or-physical-devices"><strong>section 8.2 (Connecting to Locally Hosted Simulators or Physical Devices)</strong></a>
+of the TestCentricity Mobile gem documentation for information on specifying the desired capabilities for mobile simulators
+and devices.</p>
+
+<p>You will also need to download version 1.3.0 of the iOS (<code>.app</code> and/or <code>.ipa</code>) and Android (<code>.apk</code>) apps to your workstation,
+and then edit the capabilities profiles in the <code>data.yml</code> file to change file path value associated with the corresponding
+<code>:&#39;appium:app&#39;:</code> keys to the actual file paths where the downloaded app files reside locally.</p>
+
+<h2 id="instructions-for-running-tests">Instructions for running tests</h2>
+
+<p>In order for Cucumber to execute features or scenarios from the <code>tc_mobile_react_native_demo</code> test automation project, the
+<code>test_context</code> must be specified in the Cucumber command line at runtime. There are 4 test execution profiles, or <code>test_context</code>,
+that are supported (they are defined in <code>cucumber.yml</code>):</p>
+
+<ul>
+<li><code>bat_ios</code>  - Run Build Acceptance Test (BAT) suite on iPhone</li>
+<li><code>bat_android</code>  - Run Build Acceptance Test (BAT) suite on Android Phone</li>
+<li><code>regress_ios</code>  - Run full regression test suite on iPhone</li>
+<li><code>regress_android</code>  - Run full regression test suite on Android Phone</li>
+</ul>
+
+<ol>
+<li><p>To run the Cucumber BAT suite on an iPhone simulator, execute the following command in the Terminal:</p>
+
+<pre class="code ruby"><code class="ruby">bundle exec cucumber -p bat_ios
+</code></pre></li>
+</ol>
+
+<p>ℹ️ <strong>NOTE:</strong>
+    * To have Cucumber generate HTML formatted test results, append <code>-p report</code> to the above command line arguments.</p>
+
+<p>For example, to execute the BAT suite on an iPhone with test results being logged to an HTML test results file, execute
+   the following command in the Terminal:</p>
+
+<pre class="code ruby"><code class="ruby">    bundle exec cucumber -p bat_ios -p report
+</code></pre>
+
+<p>To execute the regression test suite on an Android phone, execute the following command in the Terminal:</p>
+
+<pre class="code ruby"><code class="ruby">    bundle exec cucumber -p regress_android
+</code></pre>
+
+<p>ℹ️ <strong>NOTE:</strong>
+    * Appium will automatically be started prior to tests being run on locally hosted simulators.</p>
+
+<ol>
+<li><p>As the Cucumber tests are executing, the Terminal will display the lines of each feature file and scenario as they run
+in real-time.</p></li>
+<li><p>Upon completion of test execution, the Terminal will display the final test results.</p></li>
+<li><p>If you specified in the command line that HTML formatted test results should be generated (<code>-p report</code>), you can view
+them by opening the <code>reports</code> folder in the <code>tc_mobile_react_native_demo</code> project directory, and selecting the <code>test_results.html</code>
+file. Right-clicking on the <code>test_results.html</code> file will display a popup menu. Select the <strong>Open in Browser</strong> menu
+item, and then select a web browser from the popup sub menu that appears. The formatted test results will open in the
+web browser that you selected.</p></li>
+</ol>
+
+<h2 id="detailed-documentation">Detailed Documentation</h2>
+
+<p>Detailed HTML documentation of the features, scenarios, and step definitions for the <code>tc_mobile_react_native_demo</code>project
+can be accessed from the <code>index.html</code> file within the <code>doc</code> folder in the <code>tc_mobile_react_native_demo</code> project folder:</p>
+
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_📁'>📁</span> <span class='id identifier rubyid_tc_mobile_react_native_demo'>tc_mobile_react_native_demo</span>
+ <span class='id identifier rubyid_├──'>├──</span> <span class='id identifier rubyid_📁'>📁</span> <span class='id identifier rubyid_config'>config</span>
+ <span class='id identifier rubyid_├──'>├──</span> <span class='id identifier rubyid_📁'>📁</span> <span class='id identifier rubyid_doc'>doc</span>
+ <span class='id identifier rubyid_│'>│</span>   <span class='id identifier rubyid_└──'>└──</span> <span class='id identifier rubyid_📄'>📄</span> <span class='id identifier rubyid_index'>index</span><span class='period'>.</span><span class='id identifier rubyid_html'>html</span>
+ <span class='id identifier rubyid_├──'>├──</span> <span class='id identifier rubyid_📁'>📁</span> <span class='id identifier rubyid_features'>features</span>
+ <span class='id identifier rubyid_└──'>└──</span> <span class='id identifier rubyid_📁'>📁</span> <span class='id identifier rubyid_reports'>reports</span>
+</code></pre>
+
+<p>To view this documentation, navigate to the <code>index.html</code> file, right click on it, and select <em>Open in Browser</em></p>
+</div></div>
+
+      <div id="footer">
+  Generated on Fri Mar 29 14:05:23 2024 by
+  <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.36 (ruby-3.0.0).
+</div>
+
+    </div>
+  </body>
+</html>

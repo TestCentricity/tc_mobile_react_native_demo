@@ -1,0 +1,5419 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  Step Definitions and Transforms
+  
+    &mdash; Documentation by YARD 0.9.36
+  
+</title>
+
+  <link rel="stylesheet" href="../css/style.css" type="text/css" />
+
+  <link rel="stylesheet" href="../css/common.css" type="text/css" />
+
+  <link rel="stylesheet" href="../css/cucumber.css" type="text/css" />
+
+<script type="text/javascript">
+  pathId = "requirements::step_transformers";
+  relpath = '../';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../js/app.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../js/cucumber.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="../class_list.html?1"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="../_index.html">Index (s)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../requirements.html" title="requirements (requirements)">requirements</a></span></span>
+     &raquo; 
+    <span class="title">step_transformers</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="feature_list_link"
+        href="../feature_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <div id="content"><div class="requirements">
+  <div class="title">Step Definitions &amp; Transforms</div>
+
+  <div class="summary">
+    <div>55<a href="#step_definitions">Step Definitions</a></div>
+    <div>0<a href="#step_transforms">Step Transforms</a></div>
+    <div>0<a href="#undefined_steps">Undefined Steps</a></div>
+  </div>
+
+</div><div class="title">
+  
+     <a class="control" id="stepdefinition">[Collapse All]</a>
+     <div style="clear: right;"></div>
+   
+ 
+  
+    <a name="step_definitions">
+  
+  <div class="name">Step Definitions</div>
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        
+                        ">
+  <a name="step_definition9-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">When</span>
+    <span class="name">/^I (?:load|am on) the (.*) screen$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+(%3F:load%7Cam+on)+the+(%2E*)+screen$%2F" target="_blank">Rubular</a>
+      
+      
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">features/step_definitions/generic_steps.rb:39</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">39
+40
+41
+42
+43</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>When</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I (?:load|am on) the (.*) screen$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_screen_name'>screen_name</span><span class='op'>|</span>
+  <span class='comment'># find and load the specified target screen
+</span>  <span class='id identifier rubyid_target_screen'>target_screen</span> <span class='op'>=</span> <span class='const'>ScreenManager</span><span class='period'>.</span><span class='id identifier rubyid_find_screen'>find_screen</span><span class='lparen'>(</span><span class='id identifier rubyid_screen_name'>screen_name</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_target_screen'>target_screen</span><span class='period'>.</span><span class='id identifier rubyid_load_screen'>load_screen</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+      <div class='showSteps'>
+        [<a href='#' class='toggleSteps' alt="22 steps">Hide 22 steps</a>]
+      </div>
+    
+    <div class="steps">
+      
+      
+      <div class="step odd">
+        <div>
+          <span class="predicate">
+            And 
+          </span>
+          <span class="defined">
+            I am on the <span class='match'>Login</span> screen
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/login.html">features/login.feature:12</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      <div class="step even">
+        <div>
+          <span class="predicate">
+            And 
+          </span>
+          <span class="defined">
+            I am on the <span class='match'>Products</span> screen
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/logout.html">features/logout.feature:12</a>
+        
+        <a class="definition" style="clear: right;" href="features/products.html">features/products.feature:12</a>
+        
+        <a class="definition" style="clear: right;" href="features/deep_links.html">features/deep_links.feature:15</a>
+        
+        <a class="definition" style="clear: right;" href="features/deep_links.html">features/deep_links.feature:34</a>
+        
+        <a class="definition" style="clear: right;" href="features/deep_links.html">features/deep_links.feature:47</a>
+        
+        <a class="definition" style="clear: right;" href="features/deep_links.html">features/deep_links.feature:59</a>
+        
+        <a class="definition" style="clear: right;" href="features/navigation.html">features/navigation.feature:12</a>
+        
+        <a class="definition" style="clear: right;" href="features/shopping_cart.html">features/shopping_cart.feature:12</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      <div class="step odd">
+        <div>
+          <span class="predicate">
+            And 
+          </span>
+          <span class="defined">
+            I am on the <span class='match'>Drawing</span> screen
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/drawing.html">features/drawing.feature:12</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      <div class="step even">
+        <div>
+          <span class="predicate">
+            And 
+          </span>
+          <span class="defined">
+            I am on the <span class='match'>Webview</span> screen
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/webview.html">features/webview.feature:12</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      <div class="step odd">
+        <div>
+          <span class="predicate">
+            When 
+          </span>
+          <span class="defined">
+            I load the <span class='match'>About</span> screen
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/deep_links.html">features/deep_links.feature:16</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      <div class="step even">
+        <div>
+          <span class="predicate">
+            When 
+          </span>
+          <span class="defined">
+            I load the <span class='match'>Product Item</span> screen
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/deep_links.html">features/deep_links.feature:36</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      <div class="step odd">
+        <div>
+          <span class="predicate">
+            When 
+          </span>
+          <span class="defined">
+            I load the <span class='match'>Cart</span> screen
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/deep_links.html">features/deep_links.feature:49</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      <div class="step even">
+        <div>
+          <span class="predicate">
+            When 
+          </span>
+          <span class="defined">
+            I load the <span class='match'>Checkout - Review</span> screen
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/deep_links.html">features/deep_links.feature:61</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      <div class="step odd">
+        <div>
+          <span class="predicate">
+            And 
+          </span>
+          <span class="defined">
+            I am on the <span class='match'>Cart</span> screen
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/shopping_cart.html">features/shopping_cart.feature:18</a>
+        
+        <a class="definition" style="clear: right;" href="features/shopping_cart.html">features/shopping_cart.feature:25</a>
+        
+        <a class="definition" style="clear: right;" href="features/shopping_cart.html">features/shopping_cart.feature:46</a>
+        
+        <a class="definition" style="clear: right;" href="features/shopping_cart.html">features/shopping_cart.feature:53</a>
+        
+        <a class="definition" style="clear: right;" href="features/shopping_cart.html">features/shopping_cart.feature:61</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      <div class="step even">
+        <div>
+          <span class="predicate">
+            Given 
+          </span>
+          <span class="defined">
+            I am on the <span class='match'>Checkout - Payment</span> screen
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/checkout_payment_data.html">features/checkout_payment_data.feature:34</a>
+        
+        <a class="definition" style="clear: right;" href="features/checkout_payment_data.html">features/checkout_payment_data.feature:40</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        
+                        ">
+  <a name="step_definition11-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">Then</span>
+    <span class="name">/^I expect the (.*) screen to be correctly displayed$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+expect+the+(%2E*)+screen+to+be+correctly+displayed$%2F" target="_blank">Rubular</a>
+      
+      
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">features/step_definitions/generic_steps.rb:54</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">54
+55
+56
+57
+58
+59
+60</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>Then</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I expect the (.*) screen to be correctly displayed$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_screen_name'>screen_name</span><span class='op'>|</span>
+  <span class='comment'># find and verify that the specified target screen is loaded
+</span>  <span class='id identifier rubyid_target_screen'>target_screen</span> <span class='op'>=</span> <span class='const'>ScreenManager</span><span class='period'>.</span><span class='id identifier rubyid_find_screen'>find_screen</span><span class='lparen'>(</span><span class='id identifier rubyid_screen_name'>screen_name</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_target_screen'>target_screen</span><span class='period'>.</span><span class='id identifier rubyid_verify_screen_exists'>verify_screen_exists</span>
+  <span class='comment'># verify that target screen is correctly displayed
+</span>  <span class='id identifier rubyid_target_screen'>target_screen</span><span class='period'>.</span><span class='id identifier rubyid_verify_screen_ui'>verify_screen_ui</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+      <div class='showSteps'>
+        [<a href='#' class='toggleSteps' alt="19 steps">Hide 19 steps</a>]
+      </div>
+    
+    <div class="steps">
+      
+      
+      <div class="step odd">
+        <div>
+          <span class="predicate">
+            Then 
+          </span>
+          <span class="defined">
+            I expect the <span class='match'>Checkout - Address</span> screen to be correctly displayed
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/login.html">features/login.feature:29</a>
+        
+        <a class="definition" style="clear: right;" href="features/shopping_cart.html">features/shopping_cart.feature:63</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      <div class="step even">
+        <div>
+          <span class="predicate">
+            Then 
+          </span>
+          <span class="defined">
+            I expect the <span class='match'>Products</span> screen to be correctly displayed
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/logout.html">features/logout.feature:19</a>
+        
+        <a class="definition" style="clear: right;" href="features/products.html">features/products.feature:22</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      <div class="step odd">
+        <div>
+          <span class="predicate">
+            Then 
+          </span>
+          <span class="defined">
+            I expect the <span class='match'>Login</span> screen to be correctly displayed
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/logout.html">features/logout.feature:24</a>
+        
+        <a class="definition" style="clear: right;" href="features/shopping_cart.html">features/shopping_cart.feature:55</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      <div class="step even">
+        <div>
+          <span class="predicate">
+            Then 
+          </span>
+          <span class="defined">
+            I expect the <span class='match'>Web Page Viewer</span> screen to be correctly displayed
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/webview.html">features/webview.feature:14</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      <div class="step odd">
+        <div>
+          <span class="predicate">
+            Then 
+          </span>
+          <span class="defined">
+            I expect the <span class='match'>Product Item</span> screen to be correctly displayed
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/products.html">features/products.feature:35</a>
+        
+        <a class="definition" style="clear: right;" href="features/products.html">features/products.feature:46</a>
+        
+        <a class="definition" style="clear: right;" href="features/deep_links.html">features/deep_links.feature:37</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      <div class="step even">
+        <div>
+          <span class="predicate">
+            Then 
+          </span>
+          <span class="defined">
+            I expect the <span class='match'>About</span> screen to be correctly displayed
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/deep_links.html">features/deep_links.feature:17</a>
+        
+        <a class="definition" style="clear: right;" href="features/navigation.html">features/navigation.feature:31</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      <div class="step odd">
+        <div>
+          <span class="predicate">
+            Then 
+          </span>
+          <span class="defined">
+            I expect the <span class='match'>Cart</span> screen to be correctly displayed
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/deep_links.html">features/deep_links.feature:50</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      <div class="step even">
+        <div>
+          <span class="predicate">
+            Then 
+          </span>
+          <span class="defined">
+            I expect the <span class='match'>Checkout - Review</span> screen to be correctly displayed
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/deep_links.html">features/deep_links.feature:62</a>
+        
+        <a class="definition" style="clear: right;" href="features/checkout_payment_data.html">features/checkout_payment_data.feature:36</a>
+        
+        <a class="definition" style="clear: right;" href="features/checkout_payment_data.html">features/checkout_payment_data.feature:42</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      <div class="step odd">
+        <div>
+          <span class="predicate">
+            Then 
+          </span>
+          <span class="defined">
+            I expect the <span class='match'>QR Code Scanner</span> screen to be correctly displayed
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/navigation.html">features/navigation.feature:46</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      <div class="step even">
+        <div>
+          <span class="predicate">
+            Then 
+          </span>
+          <span class="defined">
+            I expect the <span class='match'>Checkout - Complete</span> screen to be correctly displayed
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/checkout_payment_data.html">features/checkout_payment_data.feature:48</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      <div class="step odd">
+        <div>
+          <span class="predicate">
+            Then 
+          </span>
+          <span class="defined">
+            I expect the <span class='match'>Checkout - Payment</span> screen to be correctly displayed
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/checkout_delivery_data.html">features/checkout_delivery_data.feature:30</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        
+                        ">
+  <a name="step_definition5-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">Given</span>
+    <span class="name">/^I have launched the SauceLabs My Demo app$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+have+launched+the+SauceLabs+My+Demo+app$%2F" target="_blank">Rubular</a>
+      
+      
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">features/step_definitions/generic_steps.rb:4</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">4
+5
+6
+7
+8
+9
+10
+11</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>Given</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I have launched the SauceLabs My Demo app$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span>
+  <span class='comment'># activate the app
+</span>  <span class='const'>AppiumConnect</span><span class='period'>.</span><span class='id identifier rubyid_activate_app'>activate_app</span>
+  <span class='comment'># ensure Shopping Cart is empty
+</span>  <span class='id identifier rubyid_empty_cart'><span class='object_link'><a href="../top-level-namespace.html#empty_cart-instance_method" title="#empty_cart (method)">empty_cart</a></span></span>
+  <span class='comment'># load data for placeholder user
+</span>  <span class='id identifier rubyid_user_data_source'>user_data_source</span><span class='period'>.</span><span class='id identifier rubyid_find_user'>find_user</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>placeholder</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+      <div class='showSteps'>
+        [<a href='#' class='toggleSteps' alt="9 steps">Hide 9 steps</a>]
+      </div>
+    
+    <div class="steps">
+      
+      
+      <div class="step odd">
+        <div>
+          <span class="predicate">
+            Given 
+          </span>
+          <span class="defined">
+            I have launched the SauceLabs My Demo app
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/login.html">features/login.feature:11</a>
+        
+        <a class="definition" style="clear: right;" href="features/logout.html">features/logout.feature:11</a>
+        
+        <a class="definition" style="clear: right;" href="features/drawing.html">features/drawing.feature:11</a>
+        
+        <a class="definition" style="clear: right;" href="features/webview.html">features/webview.feature:11</a>
+        
+        <a class="definition" style="clear: right;" href="features/products.html">features/products.feature:11</a>
+        
+        <a class="definition" style="clear: right;" href="features/biometrics.html">features/biometrics.feature:11</a>
+        
+        <a class="definition" style="clear: right;" href="features/deep_links.html">features/deep_links.feature:11</a>
+        
+        <a class="definition" style="clear: right;" href="features/navigation.html">features/navigation.feature:11</a>
+        
+        <a class="definition" style="clear: right;" href="features/shopping_cart.html">features/shopping_cart.feature:11</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        
+                        ">
+  <a name="step_definition28-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">Given</span>
+    <span class="name">/^I have added (\d+) product items? to the shopping cart$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+have+added+(%5Cd%2B)+product+items%3F+to+the+shopping+cart$%2F" target="_blank">Rubular</a>
+      
+      
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">features/step_definitions/product_steps.rb:90</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">90
+91
+92
+93
+94</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>Given</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I have added (\d+) product items? to the shopping cart$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_qty'>qty</span><span class='op'>|</span>
+  <span class='id identifier rubyid_cart_data_source'>cart_data_source</span><span class='period'>.</span><span class='id identifier rubyid_load_cart'>load_cart</span><span class='lparen'>(</span><span class='id identifier rubyid_qty'>qty</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_ids'>ids</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../CartData.html" title="CartData (class)">CartData</a></span></span><span class='period'>.</span><span class='id identifier rubyid_current'>current</span><span class='period'>.</span><span class='id identifier rubyid_product_ids'>product_ids</span>
+  <span class='id identifier rubyid_product_data_source'>product_data_source</span><span class='period'>.</span><span class='id identifier rubyid_find_product'>find_product</span><span class='lparen'>(</span><span class='id identifier rubyid_ids'>ids</span><span class='period'>.</span><span class='id identifier rubyid_last'>last</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+      <div class='showSteps'>
+        [<a href='#' class='toggleSteps' alt="5 steps">Hide 5 steps</a>]
+      </div>
+    
+    <div class="steps">
+      
+      
+      <div class="step odd">
+        <div>
+          <span class="predicate">
+            Given 
+          </span>
+          <span class="defined">
+            I have added <span class='match'>1</span> product item to the shopping cart
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/shopping_cart.html">features/shopping_cart.feature:17</a>
+        
+        <a class="definition" style="clear: right;" href="features/shopping_cart.html">features/shopping_cart.feature:24</a>
+        
+        <a class="definition" style="clear: right;" href="features/shopping_cart.html">features/shopping_cart.feature:45</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      <div class="step even">
+        <div>
+          <span class="predicate">
+            Given 
+          </span>
+          <span class="defined">
+            I have added <span class='match'>2</span> product items to the shopping cart
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/shopping_cart.html">features/shopping_cart.feature:52</a>
+        
+        <a class="definition" style="clear: right;" href="features/shopping_cart.html">features/shopping_cart.feature:60</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        
+                        ">
+  <a name="step_definition13-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">When</span>
+    <span class="name">/^I (.*) the popup request modal$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+(%2E*)+the+popup+request+modal$%2F" target="_blank">Rubular</a>
+      
+      
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">features/step_definitions/generic_steps.rb:68</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">68
+69
+70</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>When</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I (.*) the popup request modal$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_action'>action</span><span class='op'>|</span>
+  <span class='const'>ScreenManager</span><span class='period'>.</span><span class='id identifier rubyid_current_screen'>current_screen</span><span class='period'>.</span><span class='id identifier rubyid_modal_action'>modal_action</span><span class='lparen'>(</span><span class='id identifier rubyid_action'>action</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+      <div class='showSteps'>
+        [<a href='#' class='toggleSteps' alt="4 steps">Hide 4 steps</a>]
+      </div>
+    
+    <div class="steps">
+      
+      
+      <div class="step odd">
+        <div>
+          <span class="predicate">
+            When 
+          </span>
+          <span class="defined">
+            I <span class='match'>dismiss</span> the popup request modal
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/logout.html">features/logout.feature:17</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      <div class="step even">
+        <div>
+          <span class="predicate">
+            When 
+          </span>
+          <span class="defined">
+            I <span class='match'>accept</span> the popup request modal
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/logout.html">features/logout.feature:23</a>
+        
+        <a class="definition" style="clear: right;" href="features/drawing.html">features/drawing.feature:24</a>
+        
+        <a class="definition" style="clear: right;" href="features/navigation.html">features/navigation.feature:45</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        
+                        ">
+  <a name="step_definition21-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">When</span>
+    <span class="name">/^I choose a product with (.*) color options?$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+choose+a+product+with+(%2E*)+color+options%3F$%2F" target="_blank">Rubular</a>
+      
+      
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">features/step_definitions/product_steps.rb:42</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">42
+43
+44
+45
+46
+47
+48
+49
+50
+51</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>When</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I choose a product with (.*) color options?$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_option'>option</span><span class='op'>|</span>
+  <span class='id identifier rubyid_product_id'>product_id</span> <span class='op'>=</span> <span class='kw'>case</span> <span class='id identifier rubyid_option'>option</span><span class='period'>.</span><span class='id identifier rubyid_downcase'>downcase</span><span class='period'>.</span><span class='id identifier rubyid_to_sym'>to_sym</span>
+               <span class='kw'>when</span> <span class='symbol'>:multiple</span>
+                 <span class='qwords_beg'>%w[</span><span class='tstring_content'>1</span><span class='words_sep'> </span><span class='tstring_content'>5</span><span class='words_sep'> </span><span class='tstring_content'>6</span><span class='tstring_end'>]</span></span><span class='period'>.</span><span class='id identifier rubyid_sample'>sample</span>
+               <span class='kw'>when</span> <span class='symbol'>:one</span>
+                 <span class='qwords_beg'>%w[</span><span class='tstring_content'>2</span><span class='words_sep'> </span><span class='tstring_content'>3</span><span class='words_sep'> </span><span class='tstring_content'>4</span><span class='tstring_end'>]</span></span><span class='period'>.</span><span class='id identifier rubyid_sample'>sample</span>
+               <span class='kw'>end</span>
+  <span class='id identifier rubyid_products_screen'>products_screen</span><span class='period'>.</span><span class='id identifier rubyid_choose_product_item'>choose_product_item</span><span class='lparen'>(</span><span class='id identifier rubyid_product_id'>product_id</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_product_item_screen'>product_item_screen</span><span class='period'>.</span><span class='id identifier rubyid_verify_screen_exists'>verify_screen_exists</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+      <div class='showSteps'>
+        [<a href='#' class='toggleSteps' alt="4 steps">Hide 4 steps</a>]
+      </div>
+    
+    <div class="steps">
+      
+      
+      <div class="step odd">
+        <div>
+          <span class="predicate">
+            When 
+          </span>
+          <span class="defined">
+            I choose a product with <span class='match'>multiple</span> color options
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/products.html">features/products.feature:45</a>
+        
+        <a class="definition" style="clear: right;" href="features/shopping_cart.html">features/shopping_cart.feature:37</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      <div class="step even">
+        <div>
+          <span class="predicate">
+            When 
+          </span>
+          <span class="defined">
+            I choose a product with <span class='match'>one</span> color option
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/products.html">features/products.feature:55</a>
+        
+        <a class="definition" style="clear: right;" href="features/shopping_cart.html">features/shopping_cart.feature:31</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        
+                        ">
+  <a name="step_definition10-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">When</span>
+    <span class="name">/^I (?:click|tap) the ([^\"]*) navigation menu item$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+(%3F:click%7Ctap)+the+([%5E%5C%22]*)+navigation+menu+item$%2F" target="_blank">Rubular</a>
+      
+      
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">features/step_definitions/generic_steps.rb:46</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">46
+47
+48
+49
+50
+51</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>When</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I (?:click|tap) the ([^\&quot;]*) navigation menu item$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_screen_name'>screen_name</span><span class='op'>|</span>
+  <span class='comment'># find and navigate to the specified target screen
+</span>  <span class='id identifier rubyid_target_screen'>target_screen</span> <span class='op'>=</span> <span class='const'>ScreenManager</span><span class='period'>.</span><span class='id identifier rubyid_find_screen'>find_screen</span><span class='lparen'>(</span><span class='id identifier rubyid_screen_name'>screen_name</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_target_screen'>target_screen</span><span class='period'>.</span><span class='id identifier rubyid_navigate_to'>navigate_to</span>
+  <span class='const'>ScreenManager</span><span class='period'>.</span><span class='id identifier rubyid_current_screen'>current_screen</span> <span class='op'>=</span> <span class='id identifier rubyid_target_screen'>target_screen</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+      <div class='showSteps'>
+        [<a href='#' class='toggleSteps' alt="4 steps">Hide 4 steps</a>]
+      </div>
+    
+    <div class="steps">
+      
+      
+      <div class="step odd">
+        <div>
+          <span class="predicate">
+            When 
+          </span>
+          <span class="defined">
+            I tap the <span class='match'>Login</span> navigation menu item
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/biometrics.html">features/biometrics.feature:22</a>
+        
+        <a class="definition" style="clear: right;" href="features/biometrics.html">features/biometrics.feature:30</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      <div class="step even">
+        <div>
+          <span class="predicate">
+            When 
+          </span>
+          <span class="defined">
+            I tap the <span class='match'>About</span> navigation menu item
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/navigation.html">features/navigation.feature:30</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      <div class="step odd">
+        <div>
+          <span class="predicate">
+            When 
+          </span>
+          <span class="defined">
+            I tap the <span class='match'>QR Code Scanner</span> navigation menu item
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/navigation.html">features/navigation.feature:44</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        
+                        ">
+  <a name="step_definition17-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">Then</span>
+    <span class="name">/^the shopping cart is (.*)$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5Ethe+shopping+cart+is+(%2E*)$%2F" target="_blank">Rubular</a>
+      
+      
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">features/step_definitions/product_steps.rb:13</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>Then</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^the shopping cart is (.*)$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_state'>state</span><span class='op'>|</span>
+  <span class='kw'>case</span> <span class='id identifier rubyid_state'>state</span><span class='period'>.</span><span class='id identifier rubyid_downcase'>downcase</span><span class='period'>.</span><span class='id identifier rubyid_to_sym'>to_sym</span>
+  <span class='kw'>when</span> <span class='symbol'>:full</span><span class='comma'>,</span> <span class='symbol'>:populated</span>
+    <span class='id identifier rubyid_quantity'>quantity</span> <span class='op'>=</span> <span class='const'>Environ</span><span class='period'>.</span><span class='id identifier rubyid_is_ios?'>is_ios?</span> <span class='op'>?</span> <span class='int'>3</span> <span class='op'>:</span> <span class='int'>2</span>
+    <span class='id identifier rubyid_cart_data_source'>cart_data_source</span><span class='period'>.</span><span class='id identifier rubyid_load_cart'>load_cart</span><span class='lparen'>(</span><span class='id identifier rubyid_quantity'>quantity</span><span class='rparen'>)</span>
+  <span class='kw'>when</span> <span class='symbol'>:empty</span>
+    <span class='const'><span class='object_link'><a href="../CartData.html" title="CartData (class)">CartData</a></span></span><span class='period'>.</span><span class='id identifier rubyid_current'>current</span> <span class='op'>=</span> <span class='kw'>nil</span>
+    <span class='id identifier rubyid_base_app_screen'>base_app_screen</span><span class='period'>.</span><span class='id identifier rubyid_clear_app_data'>clear_app_data</span>
+  <span class='kw'>else</span>
+    <span class='id identifier rubyid_raise'>raise</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_state'>state</span><span class='embexpr_end'>}</span><span class='tstring_content'> is not a valid selector</span><span class='tstring_end'>&quot;</span></span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+      <div class='showSteps'>
+        [<a href='#' class='toggleSteps' alt="3 steps">Hide 3 steps</a>]
+      </div>
+    
+    <div class="steps">
+      
+      
+      <div class="step odd">
+        <div>
+          <span class="predicate">
+            And 
+          </span>
+          <span class="defined">
+            the shopping cart is <span class='match'>empty</span>
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/deep_links.html">features/deep_links.feature:48</a>
+        
+        <a class="definition" style="clear: right;" href="features/shopping_cart.html">features/shopping_cart.feature:13</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      <div class="step even">
+        <div>
+          <span class="predicate">
+            And 
+          </span>
+          <span class="defined">
+            the shopping cart is <span class='match'>populated</span>
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/deep_links.html">features/deep_links.feature:60</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        
+                        ">
+  <a name="step_definition12-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">Then</span>
+    <span class="name">/^I expect an error to be displayed due to (.*)$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+expect+an+error+to+be+displayed+due+to+(%2E*)$%2F" target="_blank">Rubular</a>
+      
+      
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">features/step_definitions/generic_steps.rb:63</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">63
+64
+65</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>Then</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I expect an error to be displayed due to (.*)$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_reason'>reason</span><span class='op'>|</span>
+  <span class='const'>ScreenManager</span><span class='period'>.</span><span class='id identifier rubyid_current_screen'>current_screen</span><span class='period'>.</span><span class='id identifier rubyid_verify_entry_error'>verify_entry_error</span><span class='lparen'>(</span><span class='id identifier rubyid_reason'>reason</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+      <div class='showSteps'>
+        [<a href='#' class='toggleSteps' alt="3 steps">Hide 3 steps</a>]
+      </div>
+    
+    <div class="steps">
+      
+      
+      <div class="step odd">
+        <div>
+          <span class="predicate">
+            Then 
+          </span>
+          <span class="defined">
+            I expect an error to be displayed due to <span class='match'>no username</span>
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/login.html">features/login.feature:17</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      <div class="step even">
+        <div>
+          <span class="predicate">
+            Then 
+          </span>
+          <span class="defined">
+            I expect an error to be displayed due to <span class='match'>no cardholder name</span>
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/checkout_payment_data.html">features/checkout_payment_data.feature:18</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      <div class="step odd">
+        <div>
+          <span class="predicate">
+            Then 
+          </span>
+          <span class="defined">
+            I expect an error to be displayed due to <span class='match'>no full name</span>
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/checkout_delivery_data.html">features/checkout_delivery_data.feature:17</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        
+                        ">
+  <a name="step_definition50-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">When</span>
+    <span class="name">/^I (.*) the navigation menu$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+(%2E*)+the+navigation+menu$%2F" target="_blank">Rubular</a>
+      
+      
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">features/step_definitions/navigation_steps.rb:3</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">3
+4
+5</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>When</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I (.*) the navigation menu$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_action'>action</span><span class='op'>|</span>
+  <span class='const'>ScreenManager</span><span class='period'>.</span><span class='id identifier rubyid_current_screen'>current_screen</span><span class='period'>.</span><span class='id identifier rubyid_nav_menu_action'>nav_menu_action</span><span class='lparen'>(</span><span class='id identifier rubyid_action'>action</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+      <div class='showSteps'>
+        [<a href='#' class='toggleSteps' alt="3 steps">Hide 3 steps</a>]
+      </div>
+    
+    <div class="steps">
+      
+      
+      <div class="step odd">
+        <div>
+          <span class="predicate">
+            And 
+          </span>
+          <span class="defined">
+            I <span class='match'>close</span> the navigation menu
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/logout.html">features/logout.feature:18</a>
+        
+        <a class="definition" style="clear: right;" href="features/navigation.html">features/navigation.feature:18</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      <div class="step even">
+        <div>
+          <span class="predicate">
+            When 
+          </span>
+          <span class="defined">
+            I <span class='match'>open</span> the navigation menu
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/navigation.html">features/navigation.feature:16</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        
+                        ">
+  <a name="step_definition2-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">When</span>
+    <span class="name">/^I choose to (.*) the drawing$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+choose+to+(%2E*)+the+drawing$%2F" target="_blank">Rubular</a>
+      
+      
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">features/step_definitions/drawing_steps.rb:8</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">8
+9
+10</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>When</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I choose to (.*) the drawing$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_action'>action</span><span class='op'>|</span>
+  <span class='id identifier rubyid_drawing_screen'>drawing_screen</span><span class='period'>.</span><span class='id identifier rubyid_perform_action'>perform_action</span><span class='lparen'>(</span><span class='id identifier rubyid_action'>action</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+      <div class='showSteps'>
+        [<a href='#' class='toggleSteps' alt="2 steps">Hide 2 steps</a>]
+      </div>
+    
+    <div class="steps">
+      
+      
+      <div class="step odd">
+        <div>
+          <span class="predicate">
+            And 
+          </span>
+          <span class="defined">
+            I choose to <span class='match'>clear</span> the drawing
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/drawing.html">features/drawing.feature:17</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      <div class="step even">
+        <div>
+          <span class="predicate">
+            And 
+          </span>
+          <span class="defined">
+            I choose to <span class='match'>save</span> the drawing
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/drawing.html">features/drawing.feature:23</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        
+                        ">
+  <a name="step_definition31-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">Then</span>
+    <span class="name">/^the shopping cart should be empty$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5Ethe+shopping+cart+should+be+empty$%2F" target="_blank">Rubular</a>
+      
+      
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">features/step_definitions/product_steps.rb:107</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">107
+108
+109</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>Then</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^the shopping cart should be empty$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span>
+  <span class='id identifier rubyid_cart_screen'>cart_screen</span><span class='period'>.</span><span class='id identifier rubyid_verify_screen_ui'>verify_screen_ui</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+      <div class='showSteps'>
+        [<a href='#' class='toggleSteps' alt="2 steps">Hide 2 steps</a>]
+      </div>
+    
+    <div class="steps">
+      
+      
+      <div class="step odd">
+        <div>
+          <span class="predicate">
+            Then 
+          </span>
+          <span class="defined">
+            the shopping cart should be empty
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/shopping_cart.html">features/shopping_cart.feature:20</a>
+        
+        <a class="definition" style="clear: right;" href="features/shopping_cart.html">features/shopping_cart.feature:27</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        
+                        ">
+  <a name="step_definition23-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">When</span>
+    <span class="name">/^I select a quantity of (\d+)$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+select+a+quantity+of+(%5Cd%2B)$%2F" target="_blank">Rubular</a>
+      
+      
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">features/step_definitions/product_steps.rb:61</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">61
+62
+63</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>When</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I select a quantity of (\d+)$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_qty'>qty</span><span class='op'>|</span>
+  <span class='id identifier rubyid_product_item_screen'>product_item_screen</span><span class='period'>.</span><span class='id identifier rubyid_select_quantity'>select_quantity</span><span class='lparen'>(</span><span class='id identifier rubyid_qty'>qty</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+      <div class='showSteps'>
+        [<a href='#' class='toggleSteps' alt="2 steps">Hide 2 steps</a>]
+      </div>
+    
+    <div class="steps">
+      
+      
+      <div class="step odd">
+        <div>
+          <span class="predicate">
+            And 
+          </span>
+          <span class="defined">
+            I select a quantity of <span class='match'>0</span>
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/products.html">features/products.feature:56</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      <div class="step even">
+        <div>
+          <span class="predicate">
+            And 
+          </span>
+          <span class="defined">
+            I select a quantity of <span class='match'>2</span>
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/shopping_cart.html">features/shopping_cart.feature:39</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        
+                        ">
+  <a name="step_definition45-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">When</span>
+    <span class="name">/^I have (.*) biometric authorization on the Biometrics screen$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+have+(%2E*)+biometric+authorization+on+the+Biometrics+screen$%2F" target="_blank">Rubular</a>
+      
+      
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">features/step_definitions/biometrics_steps.rb:29</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>When</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I have (.*) biometric authorization on the Biometrics screen$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_action'>action</span><span class='op'>|</span>
+  <span class='const'>AppiumConnect</span><span class='period'>.</span><span class='id identifier rubyid_set_biometric_enrollment'>set_biometric_enrollment</span><span class='lparen'>(</span><span class='kw'>true</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_state'>state</span> <span class='op'>=</span> <span class='kw'>case</span> <span class='id identifier rubyid_action'>action</span><span class='period'>.</span><span class='id identifier rubyid_downcase'>downcase</span><span class='period'>.</span><span class='id identifier rubyid_to_sym'>to_sym</span>
+          <span class='kw'>when</span> <span class='symbol'>:enabled</span>
+            <span class='symbol'>:on</span>
+          <span class='kw'>when</span> <span class='symbol'>:disabled</span>
+            <span class='symbol'>:off</span>
+          <span class='kw'>else</span>
+            <span class='id identifier rubyid_raise'>raise</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_action'>action</span><span class='embexpr_end'>}</span><span class='tstring_content'> is not a valid selector</span><span class='tstring_end'>&quot;</span></span>
+          <span class='kw'>end</span>
+  <span class='id identifier rubyid_load_biometrics_screen'><span class='object_link'><a href="../top-level-namespace.html#load_biometrics_screen-instance_method" title="#load_biometrics_screen (method)">load_biometrics_screen</a></span></span>
+  <span class='id identifier rubyid_biometrics_screen'>biometrics_screen</span><span class='period'>.</span><span class='id identifier rubyid_biometric_auth'>biometric_auth</span><span class='lparen'>(</span><span class='id identifier rubyid_state'>state</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+      <div class='showSteps'>
+        [<a href='#' class='toggleSteps' alt="2 steps">Hide 2 steps</a>]
+      </div>
+    
+    <div class="steps">
+      
+      
+      <div class="step odd">
+        <div>
+          <span class="predicate">
+            Given 
+          </span>
+          <span class="defined">
+            I have <span class='match'>enabled</span> biometric authorization on the Biometrics screen
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/biometrics.html">features/biometrics.feature:21</a>
+        
+        <a class="definition" style="clear: right;" href="features/biometrics.html">features/biometrics.feature:29</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        
+                        ">
+  <a name="step_definition46-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">Then</span>
+    <span class="name">/^I should see a request to authorize using biometrics$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+should+see+a+request+to+authorize+using+biometrics$%2F" target="_blank">Rubular</a>
+      
+      
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">features/step_definitions/biometrics_steps.rb:44</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">44
+45
+46</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>Then</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I should see a request to authorize using biometrics$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span>
+  <span class='const'>ScreenManager</span><span class='period'>.</span><span class='id identifier rubyid_current_screen'>current_screen</span><span class='period'>.</span><span class='id identifier rubyid_verify_face_id_request'>verify_face_id_request</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+      <div class='showSteps'>
+        [<a href='#' class='toggleSteps' alt="2 steps">Hide 2 steps</a>]
+      </div>
+    
+    <div class="steps">
+      
+      
+      <div class="step odd">
+        <div>
+          <span class="predicate">
+            Then 
+          </span>
+          <span class="defined">
+            I should see a request to authorize using biometrics
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/biometrics.html">features/biometrics.feature:23</a>
+        
+        <a class="definition" style="clear: right;" href="features/biometrics.html">features/biometrics.feature:31</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        
+                        ">
+  <a name="step_definition47-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">When</span>
+    <span class="name">/^I submit an? (.*) face ID$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+submit+an%3F+(%2E*)+face+ID$%2F" target="_blank">Rubular</a>
+      
+      
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">features/step_definitions/biometrics_steps.rb:49</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>When</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I submit an? (.*) face ID$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_state'>state</span><span class='op'>|</span>
+  <span class='id identifier rubyid_match'>match</span> <span class='op'>=</span> <span class='kw'>case</span> <span class='id identifier rubyid_state'>state</span><span class='period'>.</span><span class='id identifier rubyid_downcase'>downcase</span><span class='period'>.</span><span class='id identifier rubyid_to_sym'>to_sym</span>
+          <span class='kw'>when</span> <span class='symbol'>:valid</span>
+            <span class='kw'>true</span>
+          <span class='kw'>when</span> <span class='symbol'>:invalid</span>
+            <span class='kw'>false</span>
+          <span class='kw'>else</span>
+            <span class='id identifier rubyid_raise'>raise</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_action'>action</span><span class='embexpr_end'>}</span><span class='tstring_content'> is not a valid selector</span><span class='tstring_end'>&quot;</span></span>
+          <span class='kw'>end</span>
+  <span class='const'>AppiumConnect</span><span class='period'>.</span><span class='id identifier rubyid_biometric_match'>biometric_match</span><span class='lparen'>(</span><span class='symbol'>:faceId</span><span class='comma'>,</span> <span class='id identifier rubyid_match'>match</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+      <div class='showSteps'>
+        [<a href='#' class='toggleSteps' alt="2 steps">Hide 2 steps</a>]
+      </div>
+    
+    <div class="steps">
+      
+      
+      <div class="step odd">
+        <div>
+          <span class="predicate">
+            When 
+          </span>
+          <span class="defined">
+            I submit an <span class='match'>invalid</span> face ID
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/biometrics.html">features/biometrics.feature:24</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      <div class="step even">
+        <div>
+          <span class="predicate">
+            When 
+          </span>
+          <span class="defined">
+            I submit a <span class='match'>valid</span> face ID
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/biometrics.html">features/biometrics.feature:32</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        
+                        ">
+  <a name="step_definition24-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">When</span>
+    <span class="name">/^I add the selected product to the cart$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+add+the+selected+product+to+the+cart$%2F" target="_blank">Rubular</a>
+      
+      
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">features/step_definitions/product_steps.rb:66</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">66
+67
+68</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>When</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I add the selected product to the cart$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span>
+  <span class='id identifier rubyid_product_item_screen'>product_item_screen</span><span class='period'>.</span><span class='id identifier rubyid_add_to_cart'>add_to_cart</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+      <div class='showSteps'>
+        [<a href='#' class='toggleSteps' alt="2 steps">Hide 2 steps</a>]
+      </div>
+    
+    <div class="steps">
+      
+      
+      <div class="step odd">
+        <div>
+          <span class="predicate">
+            And 
+          </span>
+          <span class="defined">
+            I add the selected product to the cart
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/shopping_cart.html">features/shopping_cart.feature:32</a>
+        
+        <a class="definition" style="clear: right;" href="features/shopping_cart.html">features/shopping_cart.feature:40</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        
+                        ">
+  <a name="step_definition51-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">When</span>
+    <span class="name">/^I swipe (.*)$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+swipe+(%2E*)$%2F" target="_blank">Rubular</a>
+      
+      
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">features/step_definitions/navigation_steps.rb:8</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">8
+9
+10
+11
+12</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>When</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I swipe (.*)$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_direction'>direction</span><span class='op'>|</span>
+  <span class='id identifier rubyid_direction'>direction</span> <span class='op'>=</span> <span class='id identifier rubyid_direction'>direction</span><span class='period'>.</span><span class='id identifier rubyid_downcase'>downcase</span><span class='period'>.</span><span class='id identifier rubyid_to_sym'>to_sym</span>
+  <span class='id identifier rubyid_distance'>distance</span> <span class='op'>=</span> <span class='id identifier rubyid_direction'>direction</span> <span class='op'>==</span> <span class='symbol'>:right</span> <span class='op'>?</span> <span class='float'>0.5</span> <span class='op'>:</span> <span class='int'>1</span>
+  <span class='const'>ScreenManager</span><span class='period'>.</span><span class='id identifier rubyid_current_screen'>current_screen</span><span class='period'>.</span><span class='id identifier rubyid_swipe_gesture'>swipe_gesture</span><span class='lparen'>(</span><span class='id identifier rubyid_direction'>direction</span><span class='comma'>,</span> <span class='id identifier rubyid_distance'>distance</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+      <div class='showSteps'>
+        [<a href='#' class='toggleSteps' alt="2 steps">Hide 2 steps</a>]
+      </div>
+    
+    <div class="steps">
+      
+      
+      <div class="step odd">
+        <div>
+          <span class="predicate">
+            When 
+          </span>
+          <span class="defined">
+            I swipe <span class='match'>left</span>
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/navigation.html">features/navigation.feature:23</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      <div class="step even">
+        <div>
+          <span class="predicate">
+            When 
+          </span>
+          <span class="defined">
+            I swipe <span class='match'>right</span>
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/navigation.html">features/navigation.feature:25</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        
+                        ">
+  <a name="step_definition52-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">Then</span>
+    <span class="name">/^I expect the navigation menu to be correctly displayed$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+expect+the+navigation+menu+to+be+correctly+displayed$%2F" target="_blank">Rubular</a>
+      
+      
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">features/step_definitions/navigation_steps.rb:15</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">15
+16
+17</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>Then</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I expect the navigation menu to be correctly displayed$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span>
+  <span class='const'>ScreenManager</span><span class='period'>.</span><span class='id identifier rubyid_current_screen'>current_screen</span><span class='period'>.</span><span class='id identifier rubyid_verify_nav_menu'>verify_nav_menu</span><span class='lparen'>(</span><span class='id identifier rubyid_state'>state</span> <span class='op'>=</span> <span class='symbol'>:displayed</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+      <div class='showSteps'>
+        [<a href='#' class='toggleSteps' alt="2 steps">Hide 2 steps</a>]
+      </div>
+    
+    <div class="steps">
+      
+      
+      <div class="step odd">
+        <div>
+          <span class="predicate">
+            Then 
+          </span>
+          <span class="defined">
+            I expect the navigation menu to be correctly displayed
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/navigation.html">features/navigation.feature:17</a>
+        
+        <a class="definition" style="clear: right;" href="features/navigation.html">features/navigation.feature:24</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        
+                        ">
+  <a name="step_definition53-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">Then</span>
+    <span class="name">/^I expect the navigation menu to be hidden$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+expect+the+navigation+menu+to+be+hidden$%2F" target="_blank">Rubular</a>
+      
+      
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">features/step_definitions/navigation_steps.rb:20</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">20
+21
+22</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>Then</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I expect the navigation menu to be hidden$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span>
+  <span class='const'>ScreenManager</span><span class='period'>.</span><span class='id identifier rubyid_current_screen'>current_screen</span><span class='period'>.</span><span class='id identifier rubyid_verify_nav_menu'>verify_nav_menu</span><span class='lparen'>(</span><span class='id identifier rubyid_state'>state</span> <span class='op'>=</span> <span class='symbol'>:closed</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+      <div class='showSteps'>
+        [<a href='#' class='toggleSteps' alt="2 steps">Hide 2 steps</a>]
+      </div>
+    
+    <div class="steps">
+      
+      
+      <div class="step odd">
+        <div>
+          <span class="predicate">
+            Then 
+          </span>
+          <span class="defined">
+            I expect the navigation menu to be hidden
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/navigation.html">features/navigation.feature:19</a>
+        
+        <a class="definition" style="clear: right;" href="features/navigation.html">features/navigation.feature:26</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        
+                        ">
+  <a name="step_definition26-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">Then</span>
+    <span class="name">/^I expect the selected product to be correctly displayed in the shopping cart$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+expect+the+selected+product+to+be+correctly+displayed+in+the+shopping+cart$%2F" target="_blank">Rubular</a>
+      
+      
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">features/step_definitions/product_steps.rb:79</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">79
+80
+81
+82</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>Then</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I expect the selected product to be correctly displayed in the shopping cart$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span>
+  <span class='id identifier rubyid_cart_screen'>cart_screen</span><span class='period'>.</span><span class='id identifier rubyid_load_screen'>load_screen</span>
+  <span class='id identifier rubyid_cart_screen'>cart_screen</span><span class='period'>.</span><span class='id identifier rubyid_verify_screen_ui'>verify_screen_ui</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+      <div class='showSteps'>
+        [<a href='#' class='toggleSteps' alt="2 steps">Hide 2 steps</a>]
+      </div>
+    
+    <div class="steps">
+      
+      
+      <div class="step odd">
+        <div>
+          <span class="predicate">
+            Then 
+          </span>
+          <span class="defined">
+            I expect the selected product to be correctly displayed in the shopping cart
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/shopping_cart.html">features/shopping_cart.feature:33</a>
+        
+        <a class="definition" style="clear: right;" href="features/shopping_cart.html">features/shopping_cart.feature:41</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        
+                        ">
+  <a name="step_definition33-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">Given</span>
+    <span class="name">/^I have chosen to checkout with (\d+) product items? in my shopping cart$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+have+chosen+to+checkout+with+(%5Cd%2B)+product+items%3F+in+my+shopping+cart$%2F" target="_blank">Rubular</a>
+      
+      
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">features/step_definitions/checkout_steps.rb:3</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>Given</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I have chosen to checkout with (\d+) product items? in my shopping cart$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_qty'>qty</span><span class='op'>|</span>
+  <span class='id identifier rubyid_cart_data_source'>cart_data_source</span><span class='period'>.</span><span class='id identifier rubyid_load_cart'>load_cart</span><span class='lparen'>(</span><span class='id identifier rubyid_qty'>qty</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_ids'>ids</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../CartData.html" title="CartData (class)">CartData</a></span></span><span class='period'>.</span><span class='id identifier rubyid_current'>current</span><span class='period'>.</span><span class='id identifier rubyid_product_ids'>product_ids</span>
+  <span class='id identifier rubyid_product_data_source'>product_data_source</span><span class='period'>.</span><span class='id identifier rubyid_find_product'>find_product</span><span class='lparen'>(</span><span class='id identifier rubyid_ids'>ids</span><span class='period'>.</span><span class='id identifier rubyid_last'>last</span><span class='rparen'>)</span>
+
+  <span class='const'><span class='object_link'><a href="../CartData.html" title="CartData (class)">CartData</a></span></span><span class='period'>.</span><span class='id identifier rubyid_current'>current</span><span class='period'>.</span><span class='id identifier rubyid_cart_items_deep_link'>cart_items_deep_link</span> <span class='op'>=</span> <span class='kw'>nil</span> <span class='kw'>if</span> <span class='lbracket'>[</span><span class='symbol'>:checkout_step_1</span><span class='comma'>,</span> <span class='symbol'>:checkout_step_2</span><span class='comma'>,</span> <span class='symbol'>:checkout_step_3</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_include?'>include?</span><span class='lparen'>(</span><span class='const'>Environ</span><span class='period'>.</span><span class='id identifier rubyid_portal_state'>portal_state</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_cart_screen'>cart_screen</span><span class='period'>.</span><span class='id identifier rubyid_load_screen'>load_screen</span>
+  <span class='id identifier rubyid_cart_screen'>cart_screen</span><span class='period'>.</span><span class='id identifier rubyid_checkout'>checkout</span>
+  <span class='const'>Environ</span><span class='period'>.</span><span class='id identifier rubyid_portal_state'>portal_state</span> <span class='op'>=</span> <span class='symbol'>:checkout_step_1</span> <span class='kw'>unless</span> <span class='lbracket'>[</span><span class='symbol'>:checkout_step_2</span><span class='comma'>,</span> <span class='symbol'>:checkout_step_3</span><span class='rbracket'>]</span><span class='period'>.</span><span class='id identifier rubyid_include?'>include?</span><span class='lparen'>(</span><span class='const'>Environ</span><span class='period'>.</span><span class='id identifier rubyid_portal_state'>portal_state</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_checkout_address_screen'>checkout_address_screen</span><span class='period'>.</span><span class='id identifier rubyid_verify_screen_exists'>verify_screen_exists</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+      <div class='showSteps'>
+        [<a href='#' class='toggleSteps' alt="2 steps">Hide 2 steps</a>]
+      </div>
+    
+    <div class="steps">
+      
+      
+      <div class="step odd">
+        <div>
+          <span class="predicate">
+            And 
+          </span>
+          <span class="defined">
+            I have chosen to checkout with <span class='match'>1</span> product item in my shopping cart
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/checkout_payment_data.html">features/checkout_payment_data.feature:12</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      <div class="step even">
+        <div>
+          <span class="predicate">
+            And 
+          </span>
+          <span class="defined">
+            I have chosen to checkout with <span class='match'>2</span> product items in my shopping cart
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/checkout_delivery_data.html">features/checkout_delivery_data.feature:12</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        
+                        ">
+  <a name="step_definition29-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">When</span>
+    <span class="name">/^I change the item quantity to (\d+)$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+change+the+item+quantity+to+(%5Cd%2B)$%2F" target="_blank">Rubular</a>
+      
+      
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">features/step_definitions/product_steps.rb:97</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">97
+98
+99</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>When</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I change the item quantity to (\d+)$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_qty'>qty</span><span class='op'>|</span>
+  <span class='id identifier rubyid_cart_screen'>cart_screen</span><span class='period'>.</span><span class='id identifier rubyid_select_quantity'>select_quantity</span><span class='lparen'>(</span><span class='id identifier rubyid_qty'>qty</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+      <div class='showSteps'>
+        [<a href='#' class='toggleSteps' alt="2 steps">Hide 2 steps</a>]
+      </div>
+    
+    <div class="steps">
+      
+      
+      <div class="step odd">
+        <div>
+          <span class="predicate">
+            When 
+          </span>
+          <span class="defined">
+            I change the item quantity to <span class='match'>0</span>
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/shopping_cart.html">features/shopping_cart.feature:19</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      <div class="step even">
+        <div>
+          <span class="predicate">
+            When 
+          </span>
+          <span class="defined">
+            I change the item quantity to <span class='match'>3</span>
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/shopping_cart.html">features/shopping_cart.feature:47</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        
+                        ">
+  <a name="step_definition1-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">When</span>
+    <span class="name">/^I draw a (.*) on the drawing pad$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+draw+a+(%2E*)+on+the+drawing+pad$%2F" target="_blank">Rubular</a>
+      
+      
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">features/step_definitions/drawing_steps.rb:3</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">3
+4
+5</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>When</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I draw a (.*) on the drawing pad$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_shape'>shape</span><span class='op'>|</span>
+  <span class='id identifier rubyid_drawing_screen'>drawing_screen</span><span class='period'>.</span><span class='id identifier rubyid_draw_shape'>draw_shape</span><span class='lparen'>(</span><span class='id identifier rubyid_shape'>shape</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+      <div class='showSteps'>
+        [<a href='#' class='toggleSteps' alt="2 steps">Hide 2 steps</a>]
+      </div>
+    
+    <div class="steps">
+      
+      
+      <div class="step odd">
+        <div>
+          <span class="predicate">
+            When 
+          </span>
+          <span class="defined">
+            I draw a <span class='match'>triangle</span> on the drawing pad
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/drawing.html">features/drawing.feature:16</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      <div class="step even">
+        <div>
+          <span class="predicate">
+            When 
+          </span>
+          <span class="defined">
+            I draw a <span class='match'>square</span> on the drawing pad
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/drawing.html">features/drawing.feature:22</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        
+                        ">
+  <a name="step_definition32-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">When</span>
+    <span class="name">/^I choose to checkout$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+choose+to+checkout$%2F" target="_blank">Rubular</a>
+      
+      
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">features/step_definitions/product_steps.rb:112</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">112
+113
+114</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>When</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I choose to checkout$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span>
+  <span class='id identifier rubyid_cart_screen'>cart_screen</span><span class='period'>.</span><span class='id identifier rubyid_checkout'>checkout</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+      <div class='showSteps'>
+        [<a href='#' class='toggleSteps' alt="2 steps">Hide 2 steps</a>]
+      </div>
+    
+    <div class="steps">
+      
+      
+      <div class="step odd">
+        <div>
+          <span class="predicate">
+            When 
+          </span>
+          <span class="defined">
+            I choose to checkout
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/shopping_cart.html">features/shopping_cart.feature:54</a>
+        
+        <a class="definition" style="clear: right;" href="features/shopping_cart.html">features/shopping_cart.feature:62</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        
+                        ">
+  <a name="step_definition6-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">Given</span>
+    <span class="name">/^I am logged in to the SauceLabs My Demo app$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+am+logged+in+to+the+SauceLabs+My+Demo+app$%2F" target="_blank">Rubular</a>
+      
+      
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">features/step_definitions/generic_steps.rb:14</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>Given</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I am logged in to the SauceLabs My Demo app$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span>
+  <span class='comment'># activate the app
+</span>  <span class='const'>AppiumConnect</span><span class='period'>.</span><span class='id identifier rubyid_activate_app'>activate_app</span>
+  <span class='comment'># log in as a valid user
+</span>  <span class='id identifier rubyid_user_data_source'>user_data_source</span><span class='period'>.</span><span class='id identifier rubyid_find_user'>find_user</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>valid_data</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+  <span class='kw'>unless</span> <span class='const'>Environ</span><span class='period'>.</span><span class='id identifier rubyid_is_signed_in?'>is_signed_in?</span>
+    <span class='id identifier rubyid_empty_cart'><span class='object_link'><a href="../top-level-namespace.html#empty_cart-instance_method" title="#empty_cart (method)">empty_cart</a></span></span>
+    <span class='id identifier rubyid_login'><span class='object_link'><a href="../top-level-namespace.html#login-instance_method" title="#login (method)">login</a></span></span>
+    <span class='const'>Environ</span><span class='period'>.</span><span class='id identifier rubyid_set_signed_in'>set_signed_in</span><span class='lparen'>(</span><span class='kw'>true</span><span class='rparen'>)</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+      <div class='showSteps'>
+        [<a href='#' class='toggleSteps' alt="2 steps">Hide 2 steps</a>]
+      </div>
+    
+    <div class="steps">
+      
+      
+      <div class="step odd">
+        <div>
+          <span class="predicate">
+            Given 
+          </span>
+          <span class="defined">
+            I am logged in to the SauceLabs My Demo app
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/checkout_payment_data.html">features/checkout_payment_data.feature:11</a>
+        
+        <a class="definition" style="clear: right;" href="features/checkout_delivery_data.html">features/checkout_delivery_data.feature:11</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        
+                        ">
+  <a name="step_definition7-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">When</span>
+    <span class="name">/^I enter user credentials with (.*)$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+enter+user+credentials+with+(%2E*)$%2F" target="_blank">Rubular</a>
+      
+      
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">features/step_definitions/generic_steps.rb:27</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">27
+28
+29
+30</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>When</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I enter user credentials with (.*)$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_creds'>creds</span><span class='op'>|</span>
+  <span class='id identifier rubyid_user_data_source'>user_data_source</span><span class='period'>.</span><span class='id identifier rubyid_find_user'>find_user</span><span class='lparen'>(</span><span class='id identifier rubyid_creds'>creds</span><span class='period'>.</span><span class='id identifier rubyid_gsub'>gsub</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>\s+</span><span class='regexp_end'>/</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>_</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_downcase'>downcase</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_login_screen'>login_screen</span><span class='period'>.</span><span class='id identifier rubyid_login'>login</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+      <div class='showSteps'>
+        [<a href='#' class='toggleSteps' alt="2 steps">Hide 2 steps</a>]
+      </div>
+    
+    <div class="steps">
+      
+      
+      <div class="step odd">
+        <div>
+          <span class="predicate">
+            When 
+          </span>
+          <span class="defined">
+            I enter user credentials with <span class='match'>no username</span>
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/login.html">features/login.feature:16</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      <div class="step even">
+        <div>
+          <span class="predicate">
+            When 
+          </span>
+          <span class="defined">
+            I enter user credentials with <span class='match'>valid data</span>
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/login.html">features/login.feature:28</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        
+                        ">
+  <a name="step_definition19-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">Then</span>
+    <span class="name">/^I expect the sort menu to be correctly displayed$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+expect+the+sort+menu+to+be+correctly+displayed$%2F" target="_blank">Rubular</a>
+      
+      
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">features/step_definitions/product_steps.rb:32</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">32
+33
+34</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>Then</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I expect the sort menu to be correctly displayed$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span>
+  <span class='id identifier rubyid_products_screen'>products_screen</span><span class='period'>.</span><span class='id identifier rubyid_verify_sort_menu'>verify_sort_menu</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+      <div class='showSteps'>
+        [<a href='#' class='toggleSteps' alt="2 steps">Hide 2 steps</a>]
+      </div>
+    
+    <div class="steps">
+      
+      
+      <div class="step odd">
+        <div>
+          <span class="predicate">
+            Then 
+          </span>
+          <span class="defined">
+            I expect the sort menu to be correctly displayed
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/products.html">features/products.feature:17</a>
+        
+        <a class="definition" style="clear: right;" href="features/products.html">features/products.feature:23</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        
+                        ">
+  <a name="step_definition55-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">When</span>
+    <span class="name">/^I choose to log out$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+choose+to+log+out$%2F" target="_blank">Rubular</a>
+      
+      
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">features/step_definitions/navigation_steps.rb:30</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">30
+31
+32
+33</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>When</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I choose to log out$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span>
+  <span class='const'>ScreenManager</span><span class='period'>.</span><span class='id identifier rubyid_current_screen'>current_screen</span><span class='period'>.</span><span class='id identifier rubyid_invoke_nav_menu'>invoke_nav_menu</span>
+  <span class='const'>ScreenManager</span><span class='period'>.</span><span class='id identifier rubyid_current_screen'>current_screen</span><span class='period'>.</span><span class='id identifier rubyid_nav_menu'>nav_menu</span><span class='period'>.</span><span class='id identifier rubyid_open_log_out'>open_log_out</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+      <div class='showSteps'>
+        [<a href='#' class='toggleSteps' alt="1 steps">Hide 1 steps</a>]
+      </div>
+    
+    <div class="steps">
+      
+      
+      <div class="step odd">
+        <div>
+          <span class="predicate">
+            And 
+          </span>
+          <span class="defined">
+            I choose to log out
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/logout.html">features/logout.feature:13</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        
+                        ">
+  <a name="step_definition3-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">Then</span>
+    <span class="name">/^I should not be able to save the drawing$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+should+not+be+able+to+save+the+drawing$%2F" target="_blank">Rubular</a>
+      
+      
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">features/step_definitions/drawing_steps.rb:13</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">13
+14
+15</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>Then</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I should not be able to save the drawing$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span>
+  <span class='id identifier rubyid_drawing_screen'>drawing_screen</span><span class='period'>.</span><span class='id identifier rubyid_verify_no_save'>verify_no_save</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+      <div class='showSteps'>
+        [<a href='#' class='toggleSteps' alt="1 steps">Hide 1 steps</a>]
+      </div>
+    
+    <div class="steps">
+      
+      
+      <div class="step odd">
+        <div>
+          <span class="predicate">
+            Then 
+          </span>
+          <span class="defined">
+            I should not be able to save the drawing
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/drawing.html">features/drawing.feature:18</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        
+                        ">
+  <a name="step_definition4-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">Then</span>
+    <span class="name">/^I expect the drawing to be saved$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+expect+the+drawing+to+be+saved$%2F" target="_blank">Rubular</a>
+      
+      
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">features/step_definitions/drawing_steps.rb:18</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">18
+19
+20</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>Then</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I expect the drawing to be saved$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span>
+  <span class='id identifier rubyid_drawing_screen'>drawing_screen</span><span class='period'>.</span><span class='id identifier rubyid_verify_drawing_saved'>verify_drawing_saved</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+      <div class='showSteps'>
+        [<a href='#' class='toggleSteps' alt="1 steps">Hide 1 steps</a>]
+      </div>
+    
+    <div class="steps">
+      
+      
+      <div class="step odd">
+        <div>
+          <span class="predicate">
+            Then 
+          </span>
+          <span class="defined">
+            I expect the drawing to be saved
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/drawing.html">features/drawing.feature:25</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        
+                        ">
+  <a name="step_definition8-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">Given</span>
+    <span class="name">/^I have logged in a valid user$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+have+logged+in+a+valid+user$%2F" target="_blank">Rubular</a>
+      
+      
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">features/step_definitions/generic_steps.rb:33</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">33
+34
+35
+36</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>Given</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I have logged in a valid user$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span>
+  <span class='id identifier rubyid_user_data_source'>user_data_source</span><span class='period'>.</span><span class='id identifier rubyid_find_user'>find_user</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>valid_data</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_login'><span class='object_link'><a href="../top-level-namespace.html#login-instance_method" title="#login (method)">login</a></span></span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+      <div class='showSteps'>
+        [<a href='#' class='toggleSteps' alt="1 steps">Hide 1 steps</a>]
+      </div>
+    
+    <div class="steps">
+      
+      
+      <div class="step odd">
+        <div>
+          <span class="predicate">
+            Given 
+          </span>
+          <span class="defined">
+            I have logged in a valid user
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/shopping_cart.html">features/shopping_cart.feature:59</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        
+                        ">
+  <a name="step_definition15-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">When</span>
+    <span class="name">/^I access the data for product id (.*)$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+access+the+data+for+product+id+(%2E*)$%2F" target="_blank">Rubular</a>
+      
+      
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">features/step_definitions/product_steps.rb:3</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">3
+4
+5</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>When</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I access the data for product id (.*)$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_product_id'>product_id</span><span class='op'>|</span>
+  <span class='id identifier rubyid_product_data_source'>product_data_source</span><span class='period'>.</span><span class='id identifier rubyid_find_product'>find_product</span><span class='lparen'>(</span><span class='id identifier rubyid_product_id'>product_id</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+      <div class='showSteps'>
+        [<a href='#' class='toggleSteps' alt="1 steps">Hide 1 steps</a>]
+      </div>
+    
+    <div class="steps">
+      
+      
+      <div class="step odd">
+        <div>
+          <span class="predicate">
+            And 
+          </span>
+          <span class="defined">
+            I access the data for product id <span class='match'>1</span>
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/deep_links.html">features/deep_links.feature:35</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        
+                        ">
+  <a name="step_definition16-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">When</span>
+    <span class="name">/^I choose product item (.*) in the products grid$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+choose+product+item+(%2E*)+in+the+products+grid$%2F" target="_blank">Rubular</a>
+      
+      
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">features/step_definitions/product_steps.rb:8</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">8
+9
+10</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>When</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I choose product item (.*) in the products grid$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_product_id'>product_id</span><span class='op'>|</span>
+  <span class='id identifier rubyid_products_screen'>products_screen</span><span class='period'>.</span><span class='id identifier rubyid_choose_product_item'>choose_product_item</span><span class='lparen'>(</span><span class='id identifier rubyid_product_id'>product_id</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+      <div class='showSteps'>
+        [<a href='#' class='toggleSteps' alt="1 steps">Hide 1 steps</a>]
+      </div>
+    
+    <div class="steps">
+      
+      
+      <div class="step odd">
+        <div>
+          <span class="predicate">
+            When 
+          </span>
+          <span class="defined">
+            I choose product item <span class='match'>2</span> in the products grid
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/products.html">features/products.feature:34</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        
+                        ">
+  <a name="step_definition18-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">When</span>
+    <span class="name">/^I open the sort menu$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+open+the+sort+menu$%2F" target="_blank">Rubular</a>
+      
+      
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">features/step_definitions/product_steps.rb:27</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">27
+28
+29</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>When</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I open the sort menu$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span>
+  <span class='id identifier rubyid_products_screen'>products_screen</span><span class='period'>.</span><span class='id identifier rubyid_invoke_sort_menu'>invoke_sort_menu</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+      <div class='showSteps'>
+        [<a href='#' class='toggleSteps' alt="1 steps">Hide 1 steps</a>]
+      </div>
+    
+    <div class="steps">
+      
+      
+      <div class="step odd">
+        <div>
+          <span class="predicate">
+            When 
+          </span>
+          <span class="defined">
+            I open the sort menu
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/products.html">features/products.feature:16</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        
+                        ">
+  <a name="step_definition20-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">When</span>
+    <span class="name">/^I sort the product list by (.*)$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+sort+the+product+list+by+(%2E*)$%2F" target="_blank">Rubular</a>
+      
+      
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">features/step_definitions/product_steps.rb:37</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">37
+38
+39</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>When</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I sort the product list by (.*)$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_sort_mode'>sort_mode</span><span class='op'>|</span>
+  <span class='id identifier rubyid_products_screen'>products_screen</span><span class='period'>.</span><span class='id identifier rubyid_sort_by'>sort_by</span><span class='lparen'>(</span><span class='id identifier rubyid_sort_mode'>sort_mode</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+      <div class='showSteps'>
+        [<a href='#' class='toggleSteps' alt="1 steps">Hide 1 steps</a>]
+      </div>
+    
+    <div class="steps">
+      
+      
+      <div class="step odd">
+        <div>
+          <span class="predicate">
+            When 
+          </span>
+          <span class="defined">
+            I sort the product list by <span class='match'>Name Descending</span>
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/products.html">features/products.feature:21</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        
+                        ">
+  <a name="step_definition22-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">When</span>
+    <span class="name">/^I select a color option$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+select+a+color+option$%2F" target="_blank">Rubular</a>
+      
+      
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">features/step_definitions/product_steps.rb:54</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">54
+55
+56
+57
+58</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>When</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I select a color option$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span>
+  <span class='id identifier rubyid_colors'>colors</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../ProductData.html" title="ProductData (class)">ProductData</a></span></span><span class='period'>.</span><span class='id identifier rubyid_current'>current</span><span class='period'>.</span><span class='id identifier rubyid_colors'>colors</span>
+  <span class='id identifier rubyid_colors'>colors</span><span class='period'>.</span><span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='const'><span class='object_link'><a href="../ProductData.html" title="ProductData (class)">ProductData</a></span></span><span class='period'>.</span><span class='id identifier rubyid_current'>current</span><span class='period'>.</span><span class='id identifier rubyid_default_color'>default_color</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_product_item_screen'>product_item_screen</span><span class='period'>.</span><span class='id identifier rubyid_select_color'>select_color</span><span class='lparen'>(</span><span class='id identifier rubyid_colors'>colors</span><span class='period'>.</span><span class='id identifier rubyid_sample'>sample</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+      <div class='showSteps'>
+        [<a href='#' class='toggleSteps' alt="1 steps">Hide 1 steps</a>]
+      </div>
+    
+    <div class="steps">
+      
+      
+      <div class="step odd">
+        <div>
+          <span class="predicate">
+            And 
+          </span>
+          <span class="defined">
+            I select a color option
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/shopping_cart.html">features/shopping_cart.feature:38</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        
+                        ">
+  <a name="step_definition25-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">Then</span>
+    <span class="name">/^I expect the cart quantity to be correctly displayed$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+expect+the+cart+quantity+to+be+correctly+displayed$%2F" target="_blank">Rubular</a>
+      
+      
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">features/step_definitions/product_steps.rb:71</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">71
+72
+73
+74
+75
+76</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>Then</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I expect the cart quantity to be correctly displayed$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span>
+  <span class='const'><span class='object_link'><a href="../ProductData.html" title="ProductData (class)">ProductData</a></span></span><span class='period'>.</span><span class='id identifier rubyid_current'>current</span><span class='period'>.</span><span class='id identifier rubyid_chosen_color'>chosen_color</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../ProductData.html" title="ProductData (class)">ProductData</a></span></span><span class='period'>.</span><span class='id identifier rubyid_current'>current</span><span class='period'>.</span><span class='id identifier rubyid_default_color'>default_color</span> <span class='kw'>if</span> <span class='const'><span class='object_link'><a href="../ProductData.html" title="ProductData (class)">ProductData</a></span></span><span class='period'>.</span><span class='id identifier rubyid_current'>current</span><span class='period'>.</span><span class='id identifier rubyid_chosen_color'>chosen_color</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+  <span class='const'><span class='object_link'><a href="../CartData.html" title="CartData (class)">CartData</a></span></span><span class='period'>.</span><span class='id identifier rubyid_current'>current</span><span class='period'>.</span><span class='id identifier rubyid_total_price'>total_price</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="../ProductData.html" title="ProductData (class)">ProductData</a></span></span><span class='period'>.</span><span class='id identifier rubyid_current'>current</span><span class='period'>.</span><span class='id identifier rubyid_price'>price</span> <span class='op'>*</span> <span class='const'><span class='object_link'><a href="../ProductData.html" title="ProductData (class)">ProductData</a></span></span><span class='period'>.</span><span class='id identifier rubyid_current'>current</span><span class='period'>.</span><span class='id identifier rubyid_quantity'>quantity</span>
+  <span class='const'><span class='object_link'><a href="../CartData.html" title="CartData (class)">CartData</a></span></span><span class='period'>.</span><span class='id identifier rubyid_current'>current</span><span class='period'>.</span><span class='id identifier rubyid_cart_items'>cart_items</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='const'><span class='object_link'><a href="../ProductData.html" title="ProductData (class)">ProductData</a></span></span><span class='period'>.</span><span class='id identifier rubyid_current'>current</span><span class='period'>.</span><span class='id identifier rubyid_quantity'>quantity</span><span class='embexpr_end'>}</span><span class='tstring_content'> - </span><span class='embexpr_beg'>#{</span><span class='const'><span class='object_link'><a href="../ProductData.html" title="ProductData (class)">ProductData</a></span></span><span class='period'>.</span><span class='id identifier rubyid_current'>current</span><span class='period'>.</span><span class='id identifier rubyid_name'>name</span><span class='embexpr_end'>}</span><span class='tstring_content'> - $</span><span class='embexpr_beg'>#{</span><span class='const'><span class='object_link'><a href="../ProductData.html" title="ProductData (class)">ProductData</a></span></span><span class='period'>.</span><span class='id identifier rubyid_current'>current</span><span class='period'>.</span><span class='id identifier rubyid_price'>price</span><span class='embexpr_end'>}</span><span class='tstring_content'> - </span><span class='embexpr_beg'>#{</span><span class='const'><span class='object_link'><a href="../ProductData.html" title="ProductData (class)">ProductData</a></span></span><span class='period'>.</span><span class='id identifier rubyid_current'>current</span><span class='period'>.</span><span class='id identifier rubyid_chosen_color'>chosen_color</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_cart_screen'>cart_screen</span><span class='period'>.</span><span class='id identifier rubyid_verify_screen_ui'>verify_screen_ui</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+      <div class='showSteps'>
+        [<a href='#' class='toggleSteps' alt="1 steps">Hide 1 steps</a>]
+      </div>
+    
+    <div class="steps">
+      
+      
+      <div class="step odd">
+        <div>
+          <span class="predicate">
+            Then 
+          </span>
+          <span class="defined">
+            I expect the cart quantity to be correctly displayed
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/shopping_cart.html">features/shopping_cart.feature:48</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        
+                        ">
+  <a name="step_definition27-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">Then</span>
+    <span class="name">/^I should not be able to add the selected product to the cart$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+should+not+be+able+to+add+the+selected+product+to+the+cart$%2F" target="_blank">Rubular</a>
+      
+      
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">features/step_definitions/product_steps.rb:85</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">85
+86
+87</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>Then</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I should not be able to add the selected product to the cart$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span>
+  <span class='id identifier rubyid_product_item_screen'>product_item_screen</span><span class='period'>.</span><span class='id identifier rubyid_verify_screen_ui'>verify_screen_ui</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+      <div class='showSteps'>
+        [<a href='#' class='toggleSteps' alt="1 steps">Hide 1 steps</a>]
+      </div>
+    
+    <div class="steps">
+      
+      
+      <div class="step odd">
+        <div>
+          <span class="predicate">
+            Then 
+          </span>
+          <span class="defined">
+            I should not be able to add the selected product to the cart
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/products.html">features/products.feature:57</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        
+                        ">
+  <a name="step_definition30-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">When</span>
+    <span class="name">/^I remove the item$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+remove+the+item$%2F" target="_blank">Rubular</a>
+      
+      
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">features/step_definitions/product_steps.rb:102</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">102
+103
+104</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>When</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I remove the item$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span>
+  <span class='id identifier rubyid_cart_screen'>cart_screen</span><span class='period'>.</span><span class='id identifier rubyid_remove_item'>remove_item</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+      <div class='showSteps'>
+        [<a href='#' class='toggleSteps' alt="1 steps">Hide 1 steps</a>]
+      </div>
+    
+    <div class="steps">
+      
+      
+      <div class="step odd">
+        <div>
+          <span class="predicate">
+            When 
+          </span>
+          <span class="defined">
+            I remove the item
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/shopping_cart.html">features/shopping_cart.feature:26</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        
+                        ">
+  <a name="step_definition34-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">Given</span>
+    <span class="name">/^I have entered my payment data$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+have+entered+my+payment+data$%2F" target="_blank">Rubular</a>
+      
+      
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">features/step_definitions/checkout_steps.rb:16</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>Given</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I have entered my payment data$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span>
+  <span class='kw'>if</span> <span class='const'>Environ</span><span class='period'>.</span><span class='id identifier rubyid_portal_state'>portal_state</span> <span class='op'>==</span> <span class='symbol'>:checkout_step_3</span>
+    <span class='id identifier rubyid_checkout_review_screen'>checkout_review_screen</span><span class='period'>.</span><span class='id identifier rubyid_load_screen'>load_screen</span>
+  <span class='kw'>else</span>
+    <span class='id identifier rubyid_checkout_payment_screen'>checkout_payment_screen</span><span class='period'>.</span><span class='id identifier rubyid_load_screen'>load_screen</span>
+    <span class='id identifier rubyid_checkout_payment_screen'>checkout_payment_screen</span><span class='period'>.</span><span class='id identifier rubyid_enter_data'>enter_data</span>
+    <span class='id identifier rubyid_checkout_review_screen'>checkout_review_screen</span><span class='period'>.</span><span class='id identifier rubyid_verify_screen_exists'>verify_screen_exists</span>
+    <span class='const'>Environ</span><span class='period'>.</span><span class='id identifier rubyid_portal_state'>portal_state</span> <span class='op'>=</span> <span class='symbol'>:checkout_step_3</span>
+  <span class='kw'>end</span>
+
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+      <div class='showSteps'>
+        [<a href='#' class='toggleSteps' alt="1 steps">Hide 1 steps</a>]
+      </div>
+    
+    <div class="steps">
+      
+      
+      <div class="step odd">
+        <div>
+          <span class="predicate">
+            Given 
+          </span>
+          <span class="defined">
+            I have entered my payment data
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/checkout_payment_data.html">features/checkout_payment_data.feature:46</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        
+                        ">
+  <a name="step_definition35-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">When</span>
+    <span class="name">/^I enter my address data$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+enter+my+address+data$%2F" target="_blank">Rubular</a>
+      
+      
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">features/step_definitions/checkout_steps.rb:29</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">29
+30
+31</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>When</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I enter my address data$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span>
+  <span class='id identifier rubyid_checkout_address_screen'>checkout_address_screen</span><span class='period'>.</span><span class='id identifier rubyid_enter_data'>enter_data</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+      <div class='showSteps'>
+        [<a href='#' class='toggleSteps' alt="1 steps">Hide 1 steps</a>]
+      </div>
+    
+    <div class="steps">
+      
+      
+      <div class="step odd">
+        <div>
+          <span class="predicate">
+            When 
+          </span>
+          <span class="defined">
+            I enter my address data
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/checkout_delivery_data.html">features/checkout_delivery_data.feature:29</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        
+                        ">
+  <a name="step_definition36-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">When</span>
+    <span class="name">/^I enter my address data with (.*)$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+enter+my+address+data+with+(%2E*)$%2F" target="_blank">Rubular</a>
+      
+      
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">features/step_definitions/checkout_steps.rb:34</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">34
+35
+36
+37</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>When</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I enter my address data with (.*)$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_reason'>reason</span><span class='op'>|</span>
+  <span class='id identifier rubyid_user_data_source'>user_data_source</span><span class='period'>.</span><span class='id identifier rubyid_find_user'>find_user</span><span class='lparen'>(</span><span class='id identifier rubyid_reason'>reason</span><span class='period'>.</span><span class='id identifier rubyid_gsub'>gsub</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>\s+</span><span class='regexp_end'>/</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>_</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_downcase'>downcase</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_checkout_address_screen'>checkout_address_screen</span><span class='period'>.</span><span class='id identifier rubyid_enter_data'>enter_data</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+      <div class='showSteps'>
+        [<a href='#' class='toggleSteps' alt="1 steps">Hide 1 steps</a>]
+      </div>
+    
+    <div class="steps">
+      
+      
+      <div class="step odd">
+        <div>
+          <span class="predicate">
+            When 
+          </span>
+          <span class="defined">
+            I enter my address data with <span class='match'>no full name</span>
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/checkout_delivery_data.html">features/checkout_delivery_data.feature:16</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        
+                        ">
+  <a name="step_definition37-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">When</span>
+    <span class="name">/^I enter my payment data$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+enter+my+payment+data$%2F" target="_blank">Rubular</a>
+      
+      
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">features/step_definitions/checkout_steps.rb:40</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">40
+41
+42</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>When</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I enter my payment data$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span>
+  <span class='id identifier rubyid_checkout_payment_screen'>checkout_payment_screen</span><span class='period'>.</span><span class='id identifier rubyid_enter_data'>enter_data</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+      <div class='showSteps'>
+        [<a href='#' class='toggleSteps' alt="1 steps">Hide 1 steps</a>]
+      </div>
+    
+    <div class="steps">
+      
+      
+      <div class="step odd">
+        <div>
+          <span class="predicate">
+            When 
+          </span>
+          <span class="defined">
+            I enter my payment data
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/checkout_payment_data.html">features/checkout_payment_data.feature:35</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        
+                        ">
+  <a name="step_definition38-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">When</span>
+    <span class="name">/^I enter my billing address$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+enter+my+billing+address$%2F" target="_blank">Rubular</a>
+      
+      
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">features/step_definitions/checkout_steps.rb:45</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">45
+46
+47
+48</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>When</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I enter my billing address$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span>
+  <span class='id identifier rubyid_user_data_source'>user_data_source</span><span class='period'>.</span><span class='id identifier rubyid_find_user'>find_user</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>valid_billing_data</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_checkout_payment_screen'>checkout_payment_screen</span><span class='period'>.</span><span class='id identifier rubyid_enter_data'>enter_data</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+      <div class='showSteps'>
+        [<a href='#' class='toggleSteps' alt="1 steps">Hide 1 steps</a>]
+      </div>
+    
+    <div class="steps">
+      
+      
+      <div class="step odd">
+        <div>
+          <span class="predicate">
+            When 
+          </span>
+          <span class="defined">
+            I enter my billing address
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/checkout_payment_data.html">features/checkout_payment_data.feature:41</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        
+                        ">
+  <a name="step_definition39-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">When</span>
+    <span class="name">/^I enter my payment data with (.*)$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+enter+my+payment+data+with+(%2E*)$%2F" target="_blank">Rubular</a>
+      
+      
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">features/step_definitions/checkout_steps.rb:51</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">51
+52
+53
+54</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>When</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I enter my payment data with (.*)$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_reason'>reason</span><span class='op'>|</span>
+  <span class='id identifier rubyid_user_data_source'>user_data_source</span><span class='period'>.</span><span class='id identifier rubyid_find_user'>find_user</span><span class='lparen'>(</span><span class='id identifier rubyid_reason'>reason</span><span class='period'>.</span><span class='id identifier rubyid_gsub'>gsub</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>\s+</span><span class='regexp_end'>/</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>_</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_downcase'>downcase</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_checkout_payment_screen'>checkout_payment_screen</span><span class='period'>.</span><span class='id identifier rubyid_enter_data'>enter_data</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+      <div class='showSteps'>
+        [<a href='#' class='toggleSteps' alt="1 steps">Hide 1 steps</a>]
+      </div>
+    
+    <div class="steps">
+      
+      
+      <div class="step odd">
+        <div>
+          <span class="predicate">
+            When 
+          </span>
+          <span class="defined">
+            I enter my payment data with <span class='match'>no cardholder name</span>
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/checkout_payment_data.html">features/checkout_payment_data.feature:17</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        
+                        ">
+  <a name="step_definition40-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">When</span>
+    <span class="name">/^I have entered my shipping address data$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+have+entered+my+shipping+address+data$%2F" target="_blank">Rubular</a>
+      
+      
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">features/step_definitions/checkout_steps.rb:57</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">57
+58
+59
+60
+61
+62
+63
+64
+65
+66</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>When</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I have entered my shipping address data$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span>
+  <span class='kw'>if</span> <span class='const'>Environ</span><span class='period'>.</span><span class='id identifier rubyid_portal_state'>portal_state</span> <span class='op'>==</span> <span class='symbol'>:checkout_step_2</span>
+    <span class='id identifier rubyid_checkout_payment_screen'>checkout_payment_screen</span><span class='period'>.</span><span class='id identifier rubyid_load_screen'>load_screen</span>
+  <span class='kw'>else</span>
+    <span class='id identifier rubyid_checkout_address_screen'>checkout_address_screen</span><span class='period'>.</span><span class='id identifier rubyid_load_screen'>load_screen</span>
+    <span class='id identifier rubyid_checkout_address_screen'>checkout_address_screen</span><span class='period'>.</span><span class='id identifier rubyid_enter_data'>enter_data</span>
+    <span class='id identifier rubyid_checkout_payment_screen'>checkout_payment_screen</span><span class='period'>.</span><span class='id identifier rubyid_verify_screen_exists'>verify_screen_exists</span>
+    <span class='const'>Environ</span><span class='period'>.</span><span class='id identifier rubyid_portal_state'>portal_state</span> <span class='op'>=</span> <span class='symbol'>:checkout_step_2</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+      <div class='showSteps'>
+        [<a href='#' class='toggleSteps' alt="1 steps">Hide 1 steps</a>]
+      </div>
+    
+    <div class="steps">
+      
+      
+      <div class="step odd">
+        <div>
+          <span class="predicate">
+            And 
+          </span>
+          <span class="defined">
+            I have entered my shipping address data
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/checkout_payment_data.html">features/checkout_payment_data.feature:13</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        
+                        ">
+  <a name="step_definition41-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">When</span>
+    <span class="name">/^I choose to place my order$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+choose+to+place+my+order$%2F" target="_blank">Rubular</a>
+      
+      
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">features/step_definitions/checkout_steps.rb:69</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">69
+70
+71</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>When</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I choose to place my order$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span>
+  <span class='id identifier rubyid_checkout_review_screen'>checkout_review_screen</span><span class='period'>.</span><span class='id identifier rubyid_place_order'>place_order</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+      <div class='showSteps'>
+        [<a href='#' class='toggleSteps' alt="1 steps">Hide 1 steps</a>]
+      </div>
+    
+    <div class="steps">
+      
+      
+      <div class="step odd">
+        <div>
+          <span class="predicate">
+            When 
+          </span>
+          <span class="defined">
+            I choose to place my order
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/checkout_payment_data.html">features/checkout_payment_data.feature:47</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        
+                        ">
+  <a name="step_definition42-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">When</span>
+    <span class="name">/^I am not logged in$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+am+not+logged+in$%2F" target="_blank">Rubular</a>
+      
+      
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">features/step_definitions/biometrics_steps.rb:3</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">3
+4
+5</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>When</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I am not logged in$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span>
+  <span class='id identifier rubyid_logout'><span class='object_link'><a href="../top-level-namespace.html#logout-instance_method" title="#logout (method)">logout</a></span></span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+      <div class='showSteps'>
+        [<a href='#' class='toggleSteps' alt="1 steps">Hide 1 steps</a>]
+      </div>
+    
+    <div class="steps">
+      
+      
+      <div class="step odd">
+        <div>
+          <span class="predicate">
+            And 
+          </span>
+          <span class="defined">
+            I am not logged in
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/biometrics.html">features/biometrics.feature:12</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        
+                        ">
+  <a name="step_definition43-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">When</span>
+    <span class="name">/^I have (.*) biometrics for my device$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+have+(%2E*)+biometrics+for+my+device$%2F" target="_blank">Rubular</a>
+      
+      
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">features/step_definitions/biometrics_steps.rb:8</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>When</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I have (.*) biometrics for my device$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_action'>action</span><span class='op'>|</span>
+  <span class='id identifier rubyid_state'>state</span> <span class='op'>=</span> <span class='kw'>case</span> <span class='id identifier rubyid_action'>action</span><span class='period'>.</span><span class='id identifier rubyid_downcase'>downcase</span><span class='period'>.</span><span class='id identifier rubyid_to_sym'>to_sym</span>
+          <span class='kw'>when</span> <span class='symbol'>:enabled</span>
+            <span class='kw'>true</span>
+          <span class='kw'>when</span> <span class='symbol'>:disabled</span>
+            <span class='kw'>false</span>
+          <span class='kw'>else</span>
+            <span class='id identifier rubyid_raise'>raise</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_action'>action</span><span class='embexpr_end'>}</span><span class='tstring_content'> is not a valid selector</span><span class='tstring_end'>&quot;</span></span>
+          <span class='kw'>end</span>
+  <span class='const'>AppiumConnect</span><span class='period'>.</span><span class='id identifier rubyid_set_biometric_enrollment'>set_biometric_enrollment</span><span class='lparen'>(</span><span class='id identifier rubyid_state'>state</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+      <div class='showSteps'>
+        [<a href='#' class='toggleSteps' alt="1 steps">Hide 1 steps</a>]
+      </div>
+    
+    <div class="steps">
+      
+      
+      <div class="step odd">
+        <div>
+          <span class="predicate">
+            When 
+          </span>
+          <span class="defined">
+            I have <span class='match'>disabled</span> biometrics for my device
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/biometrics.html">features/biometrics.feature:16</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        
+                        ">
+  <a name="step_definition44-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">Then</span>
+    <span class="name">/^I should( not)? be able to enable login via biometric authorization$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+should(+not)%3F+be+able+to+enable+login+via+biometric+authorization$%2F" target="_blank">Rubular</a>
+      
+      
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">features/step_definitions/biometrics_steps.rb:21</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">21
+22
+23
+24
+25
+26</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>Then</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I should( not)? be able to enable login via biometric authorization$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_negate'>negate</span><span class='op'>|</span>
+  <span class='id identifier rubyid_biometric_state'>biometric_state</span> <span class='op'>=</span> <span class='op'>!</span><span class='id identifier rubyid_negate'>negate</span>
+  <span class='id identifier rubyid_assert_equal'>assert_equal</span><span class='lparen'>(</span><span class='id identifier rubyid_biometric_state'>biometric_state</span><span class='comma'>,</span> <span class='const'>AppiumConnect</span><span class='period'>.</span><span class='id identifier rubyid_is_biometric_enrolled?'>is_biometric_enrolled?</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Expected biometric enrollment to be </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_biometric_state'>biometric_state</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_load_biometrics_screen'><span class='object_link'><a href="../top-level-namespace.html#load_biometrics_screen-instance_method" title="#load_biometrics_screen (method)">load_biometrics_screen</a></span></span>
+  <span class='id identifier rubyid_biometrics_screen'>biometrics_screen</span><span class='period'>.</span><span class='id identifier rubyid_verify_biometric_capable'>verify_biometric_capable</span><span class='lparen'>(</span><span class='id identifier rubyid_state'>state</span> <span class='op'>=</span> <span class='id identifier rubyid_biometric_state'>biometric_state</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+      <div class='showSteps'>
+        [<a href='#' class='toggleSteps' alt="1 steps">Hide 1 steps</a>]
+      </div>
+    
+    <div class="steps">
+      
+      
+      <div class="step odd">
+        <div>
+          <span class="predicate">
+            Then 
+          </span>
+          <span class="defined">
+            I should<span class='match'> not</span> be able to enable login via biometric authorization
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/biometrics.html">features/biometrics.feature:17</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        
+                        ">
+  <a name="step_definition48-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">Then</span>
+    <span class="name">/^biometric authorization should be denied$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5Ebiometric+authorization+should+be+denied$%2F" target="_blank">Rubular</a>
+      
+      
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">features/step_definitions/biometrics_steps.rb:62</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">62
+63
+64</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>Then</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^biometric authorization should be denied$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span>
+  <span class='const'>ScreenManager</span><span class='period'>.</span><span class='id identifier rubyid_current_screen'>current_screen</span><span class='period'>.</span><span class='id identifier rubyid_verify_face_id_unrecognized'>verify_face_id_unrecognized</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+      <div class='showSteps'>
+        [<a href='#' class='toggleSteps' alt="1 steps">Hide 1 steps</a>]
+      </div>
+    
+    <div class="steps">
+      
+      
+      <div class="step odd">
+        <div>
+          <span class="predicate">
+            Then 
+          </span>
+          <span class="defined">
+            biometric authorization should be denied
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/biometrics.html">features/biometrics.feature:25</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        
+                        ">
+  <a name="step_definition49-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">Then</span>
+    <span class="name">/^I should( not)? be logged in$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+should(+not)%3F+be+logged+in$%2F" target="_blank">Rubular</a>
+      
+      
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">features/step_definitions/biometrics_steps.rb:67</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">67
+68
+69
+70
+71
+72
+73</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>Then</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I should( not)? be logged in$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_negate'>negate</span><span class='op'>|</span>
+  <span class='kw'>if</span> <span class='id identifier rubyid_negate'>negate</span>
+    <span class='id identifier rubyid_login_screen'>login_screen</span><span class='period'>.</span><span class='id identifier rubyid_verify_screen_exists'>verify_screen_exists</span>
+  <span class='kw'>else</span>
+    <span class='id identifier rubyid_products_screen'>products_screen</span><span class='period'>.</span><span class='id identifier rubyid_verify_screen_exists'>verify_screen_exists</span>
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+      <div class='showSteps'>
+        [<a href='#' class='toggleSteps' alt="1 steps">Hide 1 steps</a>]
+      </div>
+    
+    <div class="steps">
+      
+      
+      <div class="step odd">
+        <div>
+          <span class="predicate">
+            Then 
+          </span>
+          <span class="defined">
+            I should be logged in
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/biometrics.html">features/biometrics.feature:33</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        
+                        ">
+  <a name="step_definition54-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">When</span>
+    <span class="name">/^I enter the url for the Apple web site$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5EI+enter+the+url+for+the+Apple+web+site$%2F" target="_blank">Rubular</a>
+      
+      
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">features/step_definitions/navigation_steps.rb:25</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">25
+26
+27</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>When</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^I enter the url for the Apple web site$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span>
+  <span class='id identifier rubyid_webview_screen'>webview_screen</span><span class='period'>.</span><span class='id identifier rubyid_load_web_site'>load_web_site</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+      <div class='showSteps'>
+        [<a href='#' class='toggleSteps' alt="1 steps">Hide 1 steps</a>]
+      </div>
+    
+    <div class="steps">
+      
+      
+      <div class="step odd">
+        <div>
+          <span class="predicate">
+            When 
+          </span>
+          <span class="defined">
+            I enter the url for the Apple web site
+          </span>
+        </div>
+        
+        <a class="definition" style="clear: right;" href="features/webview.html">features/webview.feature:13</a>
+        
+        <div style="clear: both;"></div>
+      </div>
+      
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+
+
+<div class="transformer stepdefinition
+                        nodefinitions
+                        ">
+  <a name="step_definition14-stepdefinition"></a>
+  <div class="title">
+    <span class="pre">Then</span>
+    <span class="name">/^the popup request modal should( not)? be visible$/</span>
+    <div style="float: right;">
+      <a href="http://rubular.com/?regex=%2F%5Ethe+popup+request+modal+should(+not)%3F+be+visible$%2F" target="_blank">Rubular</a>
+      
+      | UNUSED
+      <a class="stepdef" href="#">[Collapse]</a>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+  <div class="details">
+    
+    <div class="meta" style="clear: right;">
+      <div class="file">features/step_definitions/generic_steps.rb:73</div>
+    </div>
+    
+    <!-- Comments -->
+    <div>
+      
+    </div>
+    
+
+    <!-- Source Code -->
+    <div class="method_details_list">
+      <table class="source_code">
+        <tr>
+          <td>
+            <pre class="lines">73
+74
+75</pre>
+          </td>
+          <td>
+            <pre class="code"><span class='const'>Then</span><span class='lparen'>(</span><span class='tstring'><span class='regexp_beg'>/</span><span class='tstring_content'>^the popup request modal should( not)? be visible$</span><span class='regexp_end'>/</span></span><span class='rparen'>)</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_negate'>negate</span><span class='op'>|</span>
+  <span class='const'>ScreenManager</span><span class='period'>.</span><span class='id identifier rubyid_current_screen'>current_screen</span><span class='period'>.</span><span class='id identifier rubyid_verify_modal_state'>verify_modal_state</span><span class='lparen'>(</span><span class='id identifier rubyid_visible'>visible</span> <span class='op'>=</span> <span class='op'>!</span><span class='id identifier rubyid_negate'>negate</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Matching Step Instances -->
+    
+    <div class="steps">
+      
+      <div class="undefined">No steps were found to match this step definition.</div>
+      
+    </div>
+    
+  </div>
+
+  <div style="margin: 30px 20px; border-top: 1px dotted #AAA;"></div>
+
+</div>
+
+<div class="title">
+  
+     <a class="control" id="steptransform">[Collapse All]</a>
+     <div style="clear: right;"></div>
+   
+ 
+  
+    <a name="step_transforms">
+  
+  <div class="name">Step Transforms</div>
+</div>
+
+<div class="title">
+  
+ 
+  
+    <a name="undefined_steps">
+  
+  <div class="name">Undefined Steps</div>
+</div>
+
+<div class="transformer">
+  <div class="steps">
+  
+    <div class="steps">
+      <div class="undefined">No undefined steps</div>
+    </div>
+    
+  </div>
+</div>
+</div>
+
+      <div id="footer">
+  Generated on Fri Mar 29 14:05:24 2024 by
+  <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.36 (ruby-3.0.0).
+</div>
+
+    </div>
+  </body>
+</html>

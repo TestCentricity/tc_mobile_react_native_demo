@@ -1,0 +1,78 @@
+  <% mobile  = "--require features --publish-quiet" %>
+  <% reports = "--require features --format pretty --format html --out reports/test_results.html --format junit --out reports --format json --out reports/test_results.json" %>
+  <% regression = "--tags '@regression and (not @wip and not @failing)' --require features" %>
+  <% acceptance = "--tags '@bat and (not @wip and not @failing)' --require features" %>
+
+
+#==============
+# generic test context profiles
+#==============
+
+failing: --tags '@failing and not @wip'
+wip:     --tags '@wip and not @failing'
+dev:     --tags '@dev and (not @wip and not @failing)'
+regress: <%= regression %>
+bat:     <%= acceptance %>
+
+
+#==============
+# test reporting profiles
+#==============
+
+report: <%= reports %> REPORTING=true
+
+
+#==============
+# test profiles
+#==============
+
+bat_ios: -p bat -p ios_sim -p local
+bat_android: -p bat -p android_sim -p local
+regress_ios: -p ios_sim -p local
+regress_android: -p android_sim -p local
+
+
+#==============
+# target_test_environment profiles
+#==============
+
+local: TEST_ENVIRONMENT=LOCAL
+debug: DEBUG=true
+
+
+#==============
+# profiles for mobile device screen orientation
+#==============
+
+landscape: ORIENTATION=landscape
+portrait:  ORIENTATION=portrait
+
+
+#==============
+# profile to start Appium Server prior to running mobile browser tests on iOS or Android simulators or physical devices
+#==============
+run_appium: APPIUM_SERVER=run
+
+
+#==============
+# conditionally load Page and Screen Object implementations based on which target platform we're running on
+#==============
+
+ios:     PLATFORM=ios --tags @ios -r features/support/ios -e features/support/android <%= mobile %>
+android: PLATFORM=android --tags @android -r features/support/android -e features/support/ios <%= mobile %>
+
+
+#==============
+# profiles for native iOS apps hosted within XCode iOS simulators
+# NOTE: Requires installation of XCode, iOS version specific target simulators, and Appium
+#==============
+
+ios_sim: W3C_CAPS=iPhone -p ios -p run_appium
+
+
+#==============
+# profiles for native Android apps hosted within Android Studio Android Virtual Device emulators
+# NOTE: Requires installation of Android Studio, Android version specific virtual device simulators, and Appium
+#==============
+
+android_sim: W3C_CAPS=android_phone -p android -p run_appium

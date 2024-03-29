@@ -1,0 +1,1071 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  Tags
+  
+    &mdash; Documentation by YARD 0.9.36
+  
+</title>
+
+  <link rel="stylesheet" href="../css/style.css" type="text/css" />
+
+  <link rel="stylesheet" href="../css/common.css" type="text/css" />
+
+  <link rel="stylesheet" href="../css/cucumber.css" type="text/css" />
+
+<script type="text/javascript">
+  pathId = "requirements::tags";
+  relpath = '../';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../js/app.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../js/cucumber.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="../class_list.html?1"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="../_index.html">Index (t)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../requirements.html" title="requirements (requirements)">requirements</a></span></span>
+     &raquo; 
+    <span class="title">tags</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="feature_list_link"
+        href="../feature_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <div id="content">
+  
+  
+
+  <div id="tags" class="requirements">
+    <script type="text/javascript" charset="utf-8">
+      var tag_list = [ '@!android','@!device','@android','@bat','@biometrics','@cart','@checkout','@deep_links','@drawing','@ios','@log_out','@login','@mobile','@navigation','@products','@regression','@webview' ];
+
+      $(function() {
+
+        // On focus, remove all the shortcut keys
+        $("#tag_search").focus(function() {
+          $(document).unbind('keypress');
+        });
+        
+        // On blur, return all the shortcut keys
+        $("#tag_search").blur(function() {
+          $(document).bind('keypress',keyboardShortcuts);
+          $(document).bind('keypress',cucumberKeyboardShortcuts);
+        });
+
+        $("#tag_search").keyup(function(evt) {
+          updateTagFiltering($("#tag_search")[0].value);
+          updateScenarioCount();
+        });
+
+        
+        $("#tag_search").keyup(function(evt) {
+          updateTagFiltering($("#tag_search")[0].value);
+          updateScenarioCount();
+        });
+        
+         $(".tag").click(function(evt) {
+            if (typeof evt !== "undefined") {
+
+              if (evt.shiftKey === true)  {
+                window.location = $(this).attr("href");
+                return true;
+              }
+              
+              var tagSearchElement = $("#tag_search")[0];
+              
+              var tagToAdd = this.innerHTML;
+              var tagModifer = "";
+              
+              if (evt.altKey === true ) {
+                tagToAdd = "~" + tagToAdd;
+              }
+              
+              if (evt.ctrlKey === true ) {
+                tagModifier = ",";
+              } else {
+                tagModifier = " ";
+              }
+              
+              tagSearchElement.value = (tagSearchElement.value != "" ? tagSearchElement.value + tagModifier : "") + tagToAdd;
+              updateTagFiltering(tagSearchElement.value);
+              updateScenarioCount();
+              
+            }
+        });
+      });
+    </script>
+
+    <div class="title">
+      <span class="name">Tags</span>
+    </div>
+
+    <div id="tag_filtering" >
+        <span style="font-size: 18px;">Tag Filtering <a href="https://github.com/cucumber/cucumber/wiki/Tags" target="_blank">?</a></span>
+        
+        <div style="clear: both"></div>
+        
+        <div style="float: left; margin-top: 10px; padding-left: 5px; line-height: 1.5; font-size: 10px; font-style: italic;">
+          Type in tags with spaces between to 'AND' and commas between to 'OR'<br/> 
+          LEFT CLICK to AND tags; CTRL+LEFT CLICK to OR tags; hold ALT for inverse (~) tags
+        </div>
+        
+        <div style="clear: both;"></div>
+          
+        <div style="float: right;">
+          <a href="#" onclick="clearTagFiltering(); $('#tag_search')[0].value = ''; return true;">clear</a>
+        </div>
+        
+        <div style="clear: both"></div>
+        
+        <input id="tag_search" type="text" />
+        <span>Example command line execution:</span>
+        <div id="command_example">cucumber</div>
+    </div>
+
+    <div class="tags" style="margin-top: 20px;"><span class="name">Tags:</span>
+      <span class="tag" href="tags/_21android.html">@!android</span>,
+<span class="tag" href="tags/_21device.html">@!device</span>,
+<span class="tag" href="tags/android.html">@android</span>,
+<span class="tag" href="tags/bat.html">@bat</span>,
+<span class="tag" href="tags/biometrics.html">@biometrics</span>,
+<span class="tag" href="tags/cart.html">@cart</span>,
+<span class="tag" href="tags/checkout.html">@checkout</span>,
+<span class="tag" href="tags/deep_links.html">@deep_links</span>,
+<span class="tag" href="tags/drawing.html">@drawing</span>,
+<span class="tag" href="tags/ios.html">@ios</span>,
+<span class="tag" href="tags/log_out.html">@log_out</span>,
+<span class="tag" href="tags/login.html">@login</span>,
+<span class="tag" href="tags/mobile.html">@mobile</span>,
+<span class="tag" href="tags/navigation.html">@navigation</span>,
+<span class="tag" href="tags/products.html">@products</span>,
+<span class="tag" href="tags/regression.html">@regression</span>,
+<span class="tag" href="tags/webview.html">@webview</span>
+    </div>
+
+    <div id="features">
+      <div class="title">
+        <span class="name">Features<span id="scenario_count"> (36)</span></span>
+      </div>
+      
+      <ul style="padding-left: 0px;">
+      
+        <li class="feature odd @mobile @ios @android @regression @deep_links">
+        <span class='object_link'><a href="features/deep_links.html" title="requirements::features::deep_links (feature)">App screen deep links</a></span>
+          
+          
+          - <small><span class="tag" href="tags/mobile.html">@mobile</span>, <span class="tag" href="tags/ios.html">@ios</span>, <span class="tag" href="tags/android.html">@android</span>, <span class="tag" href="tags/regression.html">@regression</span>, <span class="tag" href="tags/deep_links.html">@deep_links</span></small>
+          
+        </li>
+        
+        
+          <ul style="padding-left: 20px;">
+          	
+          	<li class="scenario even @mobile @ios @android @regression @deep_links " count="0">
+          	  <span class='object_link'>
+             		<a href="features/deep_links.html#scenario_0">
+             		  Verify screen can be directly accessed via deep link
+             		</a>
+             	</span>
+             	
+              
+          	</li>
+
+            
+            
+                
+                  <ul style="padding-left: 40px;">
+                  
+                    <li class="scenario odd @mobile @ios @android @regression @deep_links  " count="10">
+
+                     <span class='object_link'>
+                       <a href="features/deep_links.html#scenario_0">
+                          Examples
+                       </a>
+                     </span>
+
+                    
+                    
+                    </li>
+                    
+                  
+                  </ul>
+                
+          
+          	<li class="scenario even @mobile @ios @android @regression @deep_links @bat" count="0">
+          	  <span class='object_link'>
+             		<a href="features/deep_links.html#scenario_1">
+             		  Verify Product Item screen can be directly accessed via deep links
+             		</a>
+             	</span>
+             	
+              
+                - <small><span class="tag" href="tags/bat.html">@bat</span></small>
+              
+          	</li>
+
+            
+            
+                
+                  <ul style="padding-left: 40px;">
+                  
+                    <li class="scenario odd @mobile @ios @android @regression @deep_links @bat " count="2">
+
+                     <span class='object_link'>
+                       <a href="features/deep_links.html#scenario_1">
+                          Examples
+                       </a>
+                     </span>
+
+                    
+                    
+                    </li>
+                    
+                  
+                  </ul>
+                
+          
+          	<li class="scenario even @mobile @ios @android @regression @deep_links @bat" count="0">
+          	  <span class='object_link'>
+             		<a href="features/deep_links.html#scenario_2">
+             		  Verify empty and populated Cart screen can be directly accessed via deep links
+             		</a>
+             	</span>
+             	
+              
+                - <small><span class="tag" href="tags/bat.html">@bat</span></small>
+              
+          	</li>
+
+            
+            
+                
+                  <ul style="padding-left: 40px;">
+                  
+                    <li class="scenario odd @mobile @ios @android @regression @deep_links @bat " count="2">
+
+                     <span class='object_link'>
+                       <a href="features/deep_links.html#scenario_2">
+                          Examples
+                       </a>
+                     </span>
+
+                    
+                    
+                    </li>
+                    
+                  
+                  </ul>
+                
+          
+          	<li class="scenario even @mobile @ios @android @regression @deep_links " count="1">
+          	  <span class='object_link'>
+             		<a href="features/deep_links.html#scenario_3">
+             		  Verify Checkout - Review screen can be directly accessed via deep link
+             		</a>
+             	</span>
+             	
+              
+          	</li>
+
+            
+            
+                
+          
+          </ul>
+        
+      
+        <li class="feature odd @mobile @ios @!android @!device @regression @biometrics">
+        <span class='object_link'><a href="features/biometrics.html" title="requirements::features::biometrics (feature)">Biometric Authorization</a></span>
+          
+          
+          - <small><span class="tag" href="tags/mobile.html">@mobile</span>, <span class="tag" href="tags/ios.html">@ios</span>, <span class="tag" href="tags/_21android.html">@!android</span>, <span class="tag" href="tags/_21device.html">@!device</span>, <span class="tag" href="tags/regression.html">@regression</span>, <span class="tag" href="tags/biometrics.html">@biometrics</span></small>
+          
+        </li>
+        
+        
+          <ul style="padding-left: 20px;">
+          	
+          	<li class="scenario even @mobile @ios @!android @!device @regression @biometrics " count="1">
+          	  <span class='object_link'>
+             		<a href="features/biometrics.html#scenario_0">
+             		  Biometric authorization denied if not enabled at the system level
+             		</a>
+             	</span>
+             	
+              
+          	</li>
+
+            
+            
+                
+          
+          	<li class="scenario odd @mobile @ios @!android @!device @regression @biometrics @bat" count="1">
+          	  <span class='object_link'>
+             		<a href="features/biometrics.html#scenario_1">
+             		  Biometric authorization denied if user submits non-matching biometric credentials
+             		</a>
+             	</span>
+             	
+              
+                - <small><span class="tag" href="tags/bat.html">@bat</span></small>
+              
+          	</li>
+
+            
+            
+                
+          
+          	<li class="scenario even @mobile @ios @!android @!device @regression @biometrics @bat" count="1">
+          	  <span class='object_link'>
+             		<a href="features/biometrics.html#scenario_2">
+             		  Biometric authorization accepted if user submits matching biometric credentials
+             		</a>
+             	</span>
+             	
+              
+                - <small><span class="tag" href="tags/bat.html">@bat</span></small>
+              
+          	</li>
+
+            
+            
+                
+          
+          </ul>
+        
+      
+        <li class="feature odd @mobile @ios @android @regression @checkout">
+        <span class='object_link'><a href="features/checkout_delivery_data.html" title="requirements::features::checkout_delivery_data (feature)">Checkout - Delivery Address</a></span>
+          
+          
+          - <small><span class="tag" href="tags/mobile.html">@mobile</span>, <span class="tag" href="tags/ios.html">@ios</span>, <span class="tag" href="tags/android.html">@android</span>, <span class="tag" href="tags/regression.html">@regression</span>, <span class="tag" href="tags/checkout.html">@checkout</span></small>
+          
+        </li>
+        
+        
+          <ul style="padding-left: 20px;">
+          	
+          	<li class="scenario even @mobile @ios @android @regression @checkout " count="0">
+          	  <span class='object_link'>
+             		<a href="features/checkout_delivery_data.html#scenario_0">
+             		  Verify correct error states when entering incomplete shipping data
+             		</a>
+             	</span>
+             	
+              
+          	</li>
+
+            
+            
+                
+                  <ul style="padding-left: 40px;">
+                  
+                    <li class="scenario odd @mobile @ios @android @regression @checkout  " count="5">
+
+                     <span class='object_link'>
+                       <a href="features/checkout_delivery_data.html#scenario_0">
+                          Examples
+                       </a>
+                     </span>
+
+                    
+                    
+                    </li>
+                    
+                  
+                  </ul>
+                
+          
+          	<li class="scenario even @mobile @ios @android @regression @checkout @bat" count="1">
+          	  <span class='object_link'>
+             		<a href="features/checkout_delivery_data.html#scenario_1">
+             		  Entry of valid shipping data provides access to Payment screen
+             		</a>
+             	</span>
+             	
+              
+                - <small><span class="tag" href="tags/bat.html">@bat</span></small>
+              
+          	</li>
+
+            
+            
+                
+          
+          </ul>
+        
+      
+        <li class="feature odd @mobile @ios @android @regression @checkout">
+        <span class='object_link'><a href="features/checkout_payment_data.html" title="requirements::features::checkout_payment_data (feature)">Checkout - Payment Method</a></span>
+          
+          
+          - <small><span class="tag" href="tags/mobile.html">@mobile</span>, <span class="tag" href="tags/ios.html">@ios</span>, <span class="tag" href="tags/android.html">@android</span>, <span class="tag" href="tags/regression.html">@regression</span>, <span class="tag" href="tags/checkout.html">@checkout</span></small>
+          
+        </li>
+        
+        
+          <ul style="padding-left: 20px;">
+          	
+          	<li class="scenario even @mobile @ios @android @regression @checkout " count="0">
+          	  <span class='object_link'>
+             		<a href="features/checkout_payment_data.html#scenario_0">
+             		  Verify correct error states when entering incomplete payment data
+             		</a>
+             	</span>
+             	
+              
+          	</li>
+
+            
+            
+                
+                  <ul style="padding-left: 40px;">
+                  
+                    <li class="scenario odd @mobile @ios @android @regression @checkout  " count="9">
+
+                     <span class='object_link'>
+                       <a href="features/checkout_payment_data.html#scenario_0">
+                          Examples
+                       </a>
+                     </span>
+
+                    
+                    
+                    </li>
+                    
+                  
+                  </ul>
+                
+          
+          	<li class="scenario even @mobile @ios @android @regression @checkout " count="1">
+          	  <span class='object_link'>
+             		<a href="features/checkout_payment_data.html#scenario_1">
+             		  Entry of valid payment data provides access to Checkout Review screen
+             		</a>
+             	</span>
+             	
+              
+          	</li>
+
+            
+            
+                
+          
+          	<li class="scenario odd @mobile @ios @android @regression @checkout @bat" count="1">
+          	  <span class='object_link'>
+             		<a href="features/checkout_payment_data.html#scenario_2">
+             		  Entry of valid billing address provides access to Checkout Review screen
+             		</a>
+             	</span>
+             	
+              
+                - <small><span class="tag" href="tags/bat.html">@bat</span></small>
+              
+          	</li>
+
+            
+            
+                
+          
+          	<li class="scenario even @mobile @ios @android @regression @checkout @bat" count="1">
+          	  <span class='object_link'>
+             		<a href="features/checkout_payment_data.html#scenario_3">
+             		  Verify order can be placed once shipping and payment data have been provided
+             		</a>
+             	</span>
+             	
+              
+                - <small><span class="tag" href="tags/bat.html">@bat</span></small>
+              
+          	</li>
+
+            
+            
+                
+          
+          </ul>
+        
+      
+        <li class="feature odd @mobile @ios @android @regression @drawing">
+        <span class='object_link'><a href="features/drawing.html" title="requirements::features::drawing (feature)">Drawing Screen</a></span>
+          
+          
+          - <small><span class="tag" href="tags/mobile.html">@mobile</span>, <span class="tag" href="tags/ios.html">@ios</span>, <span class="tag" href="tags/android.html">@android</span>, <span class="tag" href="tags/regression.html">@regression</span>, <span class="tag" href="tags/drawing.html">@drawing</span></small>
+          
+        </li>
+        
+        
+          <ul style="padding-left: 20px;">
+          	
+          	<li class="scenario even @mobile @ios @android @regression @drawing " count="1">
+          	  <span class='object_link'>
+             		<a href="features/drawing.html#scenario_0">
+             		  Verify that blank drawing cannot be saved
+             		</a>
+             	</span>
+             	
+              
+          	</li>
+
+            
+            
+                
+          
+          	<li class="scenario odd @mobile @ios @android @regression @drawing " count="1">
+          	  <span class='object_link'>
+             		<a href="features/drawing.html#scenario_1">
+             		  Verify drawing can be saved to photo library
+             		</a>
+             	</span>
+             	
+              
+          	</li>
+
+            
+            
+                
+          
+          </ul>
+        
+      
+        <li class="feature even @mobile @ios @android @regression @log_out">
+        <span class='object_link'><a href="features/logout.html" title="requirements::features::logout (feature)">Log Out</a></span>
+          
+          
+          - <small><span class="tag" href="tags/mobile.html">@mobile</span>, <span class="tag" href="tags/ios.html">@ios</span>, <span class="tag" href="tags/android.html">@android</span>, <span class="tag" href="tags/regression.html">@regression</span>, <span class="tag" href="tags/log_out.html">@log_out</span></small>
+          
+        </li>
+        
+        
+          <ul style="padding-left: 20px;">
+          	
+          	<li class="scenario odd @mobile @ios @android @regression @log_out " count="1">
+          	  <span class='object_link'>
+             		<a href="features/logout.html#scenario_0">
+             		  Verify users can cancel logging out of app
+             		</a>
+             	</span>
+             	
+              
+          	</li>
+
+            
+            
+                
+          
+          	<li class="scenario even @mobile @ios @android @regression @log_out " count="1">
+          	  <span class='object_link'>
+             		<a href="features/logout.html#scenario_1">
+             		  Verify users can log out of app
+             		</a>
+             	</span>
+             	
+              
+          	</li>
+
+            
+            
+                
+          
+          </ul>
+        
+      
+        <li class="feature odd @mobile @ios @android @regression @login">
+        <span class='object_link'><a href="features/login.html" title="requirements::features::login (feature)">Login Screen</a></span>
+          
+          
+          - <small><span class="tag" href="tags/mobile.html">@mobile</span>, <span class="tag" href="tags/ios.html">@ios</span>, <span class="tag" href="tags/android.html">@android</span>, <span class="tag" href="tags/regression.html">@regression</span>, <span class="tag" href="tags/login.html">@login</span></small>
+          
+        </li>
+        
+        
+          <ul style="padding-left: 20px;">
+          	
+          	<li class="scenario even @mobile @ios @android @regression @login " count="0">
+          	  <span class='object_link'>
+             		<a href="features/login.html#scenario_0">
+             		  Verify correct error states when using invalid credentials
+             		</a>
+             	</span>
+             	
+              
+          	</li>
+
+            
+            
+                
+                  <ul style="padding-left: 40px;">
+                  
+                    <li class="scenario odd @mobile @ios @android @regression @login  " count="4">
+
+                     <span class='object_link'>
+                       <a href="features/login.html#scenario_0">
+                          Examples
+                       </a>
+                     </span>
+
+                    
+                    
+                    </li>
+                    
+                  
+                  </ul>
+                
+          
+          	<li class="scenario even @mobile @ios @android @regression @login @bat" count="1">
+          	  <span class='object_link'>
+             		<a href="features/login.html#scenario_1">
+             		  Verify login with valid credentials
+             		</a>
+             	</span>
+             	
+              
+                - <small><span class="tag" href="tags/bat.html">@bat</span></small>
+              
+          	</li>
+
+            
+            
+                
+          
+          </ul>
+        
+      
+        <li class="feature odd @mobile @ios @android @regression @products">
+        <span class='object_link'><a href="features/products.html" title="requirements::features::products (feature)">Products</a></span>
+          
+          
+          - <small><span class="tag" href="tags/mobile.html">@mobile</span>, <span class="tag" href="tags/ios.html">@ios</span>, <span class="tag" href="tags/android.html">@android</span>, <span class="tag" href="tags/regression.html">@regression</span>, <span class="tag" href="tags/products.html">@products</span></small>
+          
+        </li>
+        
+        
+          <ul style="padding-left: 20px;">
+          	
+          	<li class="scenario even @mobile @ios @android @regression @products " count="1">
+          	  <span class='object_link'>
+             		<a href="features/products.html#scenario_0">
+             		  Verify sort menu can be invoked and is properly displayed
+             		</a>
+             	</span>
+             	
+              
+          	</li>
+
+            
+            
+                
+          
+          	<li class="scenario odd @mobile @ios @android @regression @products " count="0">
+          	  <span class='object_link'>
+             		<a href="features/products.html#scenario_1">
+             		  Verify sort menu can be invoked and is properly displayed
+             		</a>
+             	</span>
+             	
+              
+          	</li>
+
+            
+            
+                
+                  <ul style="padding-left: 40px;">
+                  
+                    <li class="scenario even @mobile @ios @android @regression @products  " count="4">
+
+                     <span class='object_link'>
+                       <a href="features/products.html#scenario_1">
+                          Examples
+                       </a>
+                     </span>
+
+                    
+                    
+                    </li>
+                    
+                  
+                  </ul>
+                
+          
+          	<li class="scenario odd @mobile @ios @android @regression @products @bat" count="0">
+          	  <span class='object_link'>
+             		<a href="features/products.html#scenario_2">
+             		  Verify Product Item screen is accessible via products grid selection
+             		</a>
+             	</span>
+             	
+              
+                - <small><span class="tag" href="tags/bat.html">@bat</span></small>
+              
+          	</li>
+
+            
+            
+                
+                  <ul style="padding-left: 40px;">
+                  
+                    <li class="scenario even @mobile @ios @android @regression @products @bat " count="3">
+
+                     <span class='object_link'>
+                       <a href="features/products.html#scenario_2">
+                          Examples
+                       </a>
+                     </span>
+
+                    
+                    
+                    </li>
+                    
+                  
+                  </ul>
+                
+          
+          	<li class="scenario odd @mobile @ios @android @regression @products " count="0">
+          	  <span class='object_link'>
+             		<a href="features/products.html#scenario_3">
+             		  Verify Product Item screen displays color options correctly
+             		</a>
+             	</span>
+             	
+              
+          	</li>
+
+            
+            
+                
+                  <ul style="padding-left: 40px;">
+                  
+                    <li class="scenario even @mobile @ios @android @regression @products  " count="2">
+
+                     <span class='object_link'>
+                       <a href="features/products.html#scenario_3">
+                          Examples
+                       </a>
+                     </span>
+
+                    
+                    
+                    </li>
+                    
+                  
+                  </ul>
+                
+          
+          	<li class="scenario odd @mobile @ios @android @regression @products " count="1">
+          	  <span class='object_link'>
+             		<a href="features/products.html#scenario_4">
+             		  Verify product item with quantity of zero cannot be added to cart
+             		</a>
+             	</span>
+             	
+              
+          	</li>
+
+            
+            
+                
+          
+          </ul>
+        
+      
+        <li class="feature even @mobile @ios @android @regression @navigation">
+        <span class='object_link'><a href="features/navigation.html" title="requirements::features::navigation (feature)">Screen Navigation</a></span>
+          
+          
+          - <small><span class="tag" href="tags/mobile.html">@mobile</span>, <span class="tag" href="tags/ios.html">@ios</span>, <span class="tag" href="tags/android.html">@android</span>, <span class="tag" href="tags/regression.html">@regression</span>, <span class="tag" href="tags/navigation.html">@navigation</span></small>
+          
+        </li>
+        
+        
+          <ul style="padding-left: 20px;">
+          	
+          	<li class="scenario odd @mobile @ios @android @regression @navigation " count="1">
+          	  <span class='object_link'>
+             		<a href="features/navigation.html#scenario_0">
+             		  Verify navigation menu can be invoked and is properly displayed
+             		</a>
+             	</span>
+             	
+              
+          	</li>
+
+            
+            
+                
+          
+          	<li class="scenario even @mobile @ios @android @regression @navigation " count="1">
+          	  <span class='object_link'>
+             		<a href="features/navigation.html#scenario_1">
+             		  Verify navigation menu can be opened and closed via swipe gestures
+             		</a>
+             	</span>
+             	
+              
+          	</li>
+
+            
+            
+                
+          
+          	<li class="scenario odd @mobile @ios @android @regression @navigation " count="0">
+          	  <span class='object_link'>
+             		<a href="features/navigation.html#scenario_2">
+             		  Verify screen navigation menu features
+             		</a>
+             	</span>
+             	
+              
+          	</li>
+
+            
+            
+                
+                  <ul style="padding-left: 40px;">
+                  
+                    <li class="scenario even @mobile @ios @android @regression @navigation  " count="6">
+
+                     <span class='object_link'>
+                       <a href="features/navigation.html#scenario_2">
+                          Examples
+                       </a>
+                     </span>
+
+                    
+                    
+                    </li>
+                    
+                  
+                  </ul>
+                
+          
+          	<li class="scenario odd @mobile @ios @android @regression @navigation " count="0">
+          	  <span class='object_link'>
+             		<a href="features/navigation.html#scenario_3">
+             		  Verify screen navigation menu features with popup modals
+             		</a>
+             	</span>
+             	
+              
+          	</li>
+
+            
+            
+                
+                  <ul style="padding-left: 40px;">
+                  
+                    <li class="scenario even @mobile @ios @android @regression @navigation  " count="3">
+
+                     <span class='object_link'>
+                       <a href="features/navigation.html#scenario_3">
+                          Examples
+                       </a>
+                     </span>
+
+                    
+                    
+                    </li>
+                    
+                  
+                  </ul>
+                
+          
+          </ul>
+        
+      
+        <li class="feature odd @mobile @ios @android @regression @cart">
+        <span class='object_link'><a href="features/shopping_cart.html" title="requirements::features::shopping_cart (feature)">Shopping Cart</a></span>
+          
+          
+          - <small><span class="tag" href="tags/mobile.html">@mobile</span>, <span class="tag" href="tags/ios.html">@ios</span>, <span class="tag" href="tags/android.html">@android</span>, <span class="tag" href="tags/regression.html">@regression</span>, <span class="tag" href="tags/cart.html">@cart</span></small>
+          
+        </li>
+        
+        
+          <ul style="padding-left: 20px;">
+          	
+          	<li class="scenario even @mobile @ios @android @regression @cart " count="1">
+          	  <span class='object_link'>
+             		<a href="features/shopping_cart.html#scenario_0">
+             		  Verify product item set to quantity of zero is removed from cart
+             		</a>
+             	</span>
+             	
+              
+          	</li>
+
+            
+            
+                
+          
+          	<li class="scenario odd @mobile @ios @android @regression @cart @bat" count="1">
+          	  <span class='object_link'>
+             		<a href="features/shopping_cart.html#scenario_1">
+             		  Verify product item can be removed from cart
+             		</a>
+             	</span>
+             	
+              
+                - <small><span class="tag" href="tags/bat.html">@bat</span></small>
+              
+          	</li>
+
+            
+            
+                
+          
+          	<li class="scenario even @mobile @ios @android @regression @cart " count="1">
+          	  <span class='object_link'>
+             		<a href="features/shopping_cart.html#scenario_2">
+             		  Verify product with one color option can be added to cart
+             		</a>
+             	</span>
+             	
+              
+          	</li>
+
+            
+            
+                
+          
+          	<li class="scenario odd @mobile @ios @android @regression @cart @bat" count="1">
+          	  <span class='object_link'>
+             		<a href="features/shopping_cart.html#scenario_3">
+             		  Verify product with multiple color options can be added to cart
+             		</a>
+             	</span>
+             	
+              
+                - <small><span class="tag" href="tags/bat.html">@bat</span></small>
+              
+          	</li>
+
+            
+            
+                
+          
+          	<li class="scenario even @mobile @ios @android @regression @cart " count="1">
+          	  <span class='object_link'>
+             		<a href="features/shopping_cart.html#scenario_4">
+             		  Verify that quantity can be changed of product item in cart
+             		</a>
+             	</span>
+             	
+              
+          	</li>
+
+            
+            
+                
+          
+          	<li class="scenario odd @mobile @ios @android @regression @cart @bat" count="1">
+          	  <span class='object_link'>
+             		<a href="features/shopping_cart.html#scenario_5">
+             		  Verify anonymous user must login prior to checkout
+             		</a>
+             	</span>
+             	
+              
+                - <small><span class="tag" href="tags/bat.html">@bat</span></small>
+              
+          	</li>
+
+            
+            
+                
+          
+          	<li class="scenario even @mobile @ios @android @regression @cart " count="1">
+          	  <span class='object_link'>
+             		<a href="features/shopping_cart.html#scenario_6">
+             		  Verify logged in user can proceed to checkout
+             		</a>
+             	</span>
+             	
+              
+          	</li>
+
+            
+            
+                
+          
+          </ul>
+        
+      
+        <li class="feature odd @mobile @ios @android @regression @webview">
+        <span class='object_link'><a href="features/webview.html" title="requirements::features::webview (feature)">Verify WebView</a></span>
+          
+          
+          - <small><span class="tag" href="tags/mobile.html">@mobile</span>, <span class="tag" href="tags/ios.html">@ios</span>, <span class="tag" href="tags/android.html">@android</span>, <span class="tag" href="tags/regression.html">@regression</span>, <span class="tag" href="tags/webview.html">@webview</span></small>
+          
+        </li>
+        
+        
+          <ul style="padding-left: 20px;">
+          	
+          	<li class="scenario even @mobile @ios @android @regression @webview " count="1">
+          	  <span class='object_link'>
+             		<a href="features/webview.html#scenario_0">
+             		  Verify WebView
+             		</a>
+             	</span>
+             	
+              
+          	</li>
+
+            
+            
+                
+          
+          </ul>
+        
+      
+      </ul>
+      <div class="undefined" style="display:none;">No Features or Scenarios match the Tag Expression</div>
+    </div>
+
+  </div>
+
+
+
+</div>
+
+      <div id="footer">
+  Generated on Fri Mar 29 14:05:24 2024 by
+  <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.36 (ruby-3.0.0).
+</div>
+
+    </div>
+  </body>
+</html>
