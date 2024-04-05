@@ -77,7 +77,7 @@ Appium's ability to interact with and verify iOS system level modal dialogs. If 
 Appium 2.x with a version of the XCUItest driver between version 6.0.0 and the current version 7.9.1, all tests that
 result in an iOS system level dialog to appear will fail. The affected dialogs are shown below:
 
-![iOS System Dialogs](https://raw.githubusercontent.com/TestCentricity/tc_mobile_react_native_demo/main/.github/iOS_System_Dialogs.jpg)
+![iOS System Dialogs](https://raw.githubusercontent.com/TestCentricity/tc_mobile_react_native_demo/main/.github/images/iOS_System_Dialogs.jpg)
 
 
 ### iPhone Dynamic Island
@@ -89,7 +89,7 @@ sort state, cart contents, sign in data, and biometrics settings when establishi
 test scenarios. This problem can be avoided by running the tests on iPhones with a fixed camera notch (which does not obscure
 the majority of the header image), or iPhones or iPads without a camera notch or "Dynamic Island".
 
-![iPhone Dynamic Island](https://raw.githubusercontent.com/TestCentricity/tc_mobile_react_native_demo/main/.github/iPhone_Dynamic_Island.jpg)
+![iPhone Dynamic Island](https://raw.githubusercontent.com/TestCentricity/tc_mobile_react_native_demo/main/.github/images/iPhone_Dynamic_Island.jpg)
 
 
 
