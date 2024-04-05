@@ -55,7 +55,7 @@ version-specific virtual device emulators. The capabilities profiles in `data.ym
 
 | Mobile device    | OS version ('appium:platformVersion':) | Device name ('appium:deviceName': / 'appium:avd':) |
 |------------------|----------------------------------------|----------------------------------------------------|
-| `:iPhone`        | '15.4'                                 | 'iPhone 13 Pro Max'                                |
+| `:iPhone`        | '17.2'                                 | 'iPhone 13 Pro Max'                                |
 | `:android_phone` | '12.0'                                 | 'Pixel_5_API_31'                                   |
 
 If you prefer to run tests against mobile devices using simulators other than the ones already preconfigured, you can
@@ -66,6 +66,31 @@ and devices.
 You will also need to download version 1.3.0 of the iOS (`.app` and/or `.ipa`) and Android (`.apk`) apps to your workstation,
 and then edit the capabilities profiles in the `data.yml` file to change file path value associated with the corresponding
 `:'appium:app':` keys to the actual file paths where the downloaded app files reside locally.
+
+
+## Known Issues
+
+### iOS System Level Dialogs
+
+Refer to [this wiki page](https://github.com/TestCentricity/testcentricity_mobile/wiki/XCUItest-driver-bug-impacts-iOS-dialogs-managed-by-com.apple.springboard) for information on a bug with the latest versions of the XCUItest driver that affects
+Appium's ability to interact with and verify iOS system level modal dialogs. If you are attempting to run these tests using
+Appium 2.x with a version of the XCUItest driver between version 6.0.0 and the current version 7.9.1, all tests that
+result in an iOS system level dialog to appear will fail. The affected dialogs are shown below:
+
+![iOS System Dialogs](https://raw.githubusercontent.com/TestCentricity/tc_mobile_react_native_demo/main/.github/iOS_System_Dialogs.jpg)
+
+
+### iPhone Dynamic Island
+
+If you choose to run these tests on a newer iPhone 14 or 15 series simulator or device, a number of tests may fail due to
+the screen header image being obscured by the iPhone's "Dynamic Island". As described in the release notes for [version 1.3.0](https://github.com/saucelabs/my-demo-app-rn/releases/tag/v1.3.0)
+of the Sauce Labs React Native Demo app, a long press (minimal half a second) on the header image is required to clear the
+sort state, cart contents, sign in data, and biometrics settings when establishing the base preconditions for many of the
+test scenarios. This problem can be avoided by running the tests on iPhones with a fixed camera notch (which does not obscure
+the majority of the header image), or iPhones or iPads without a camera notch or "Dynamic Island".
+
+![iPhone Dynamic Island](https://raw.githubusercontent.com/TestCentricity/tc_mobile_react_native_demo/main/.github/iPhone_Dynamic_Island.jpg)
+
 
 
 ## Instructions for running tests
@@ -93,6 +118,11 @@ that are supported (they are defined in `cucumber.yml`):
    To execute the regression test suite on an Android phone, execute the following command in the Terminal:
 
         bundle exec cucumber -p regress_android
+
+   If you are running locally hosted mobile tests using version 1.x of Appium server, you must include `-p appium_1x` in
+   your command line:
+
+        bundle exec cucumber -p regress_ios -p appium_1x
 
    ℹ️ **NOTE:**
     * Appium will automatically be started prior to tests being run on locally hosted simulators.

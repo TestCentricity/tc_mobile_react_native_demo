@@ -67,7 +67,7 @@
 model architecture for native mobile app functional testing of the <a href="https://github.com/saucelabs/my-demo-app-rn">Sauce Labs React Native Demo app</a>. The tests in
 this example project are designed to support testing of <a href="https://github.com/saucelabs/my-demo-app-rn/releases/tag/v1.3.0">version 1.3.0</a> of the Sauce Labs React Native Demo app.</p>
 
-<p><img src="https://raw.githubusercontent.com/TestCentricity/tc_mobile_react_native_demo/main/.github/images/RN_Demo_app.png" alt="React Native Demo app" title="React Native Demo app"></p>
+<p><img src="https://raw.githubusercontent.com/TestCentricity/tc_mobile_react_native_demo/main/.github/images/RN_Demo_app.png" alt="React Native Demo app"></p>
 
 <p>The primary purpose of this example test suite and framework is to demonstrate how to implement a cross platform comprehensive
 automated testing solution for a React Native iOS and Android mobile app using Cucumber, Appium, and the TestCentricity™ Mobile
@@ -126,7 +126,7 @@ version-specific virtual device emulators. The capabilities profiles in <code>da
 </thead><tbody>
 <tr>
 <td><code>:iPhone</code></td>
-<td>&#39;15.4&#39;</td>
+<td>&#39;17.2&#39;</td>
 <td>&#39;iPhone 13 Pro Max&#39;</td>
 </tr>
 <tr>
@@ -144,6 +144,28 @@ and devices.</p>
 <p>You will also need to download version 1.3.0 of the iOS (<code>.app</code> and/or <code>.ipa</code>) and Android (<code>.apk</code>) apps to your workstation,
 and then edit the capabilities profiles in the <code>data.yml</code> file to change file path value associated with the corresponding
 <code>:&#39;appium:app&#39;:</code> keys to the actual file paths where the downloaded app files reside locally.</p>
+
+<h2 id="known-issues">Known Issues</h2>
+
+<h3 id="ios-system-level-dialogs">iOS System Level Dialogs</h3>
+
+<p>Refer to <a href="https://github.com/TestCentricity/testcentricity_mobile/wiki/XCUItest-driver-bug-impacts-iOS-dialogs-managed-by-com.apple.springboard">this wiki page</a> for information on a bug with the latest versions of the XCUItest driver that affects
+Appium&#39;s ability to interact with and verify iOS system level modal dialogs. If you are attempting to run these tests using
+Appium 2.x with a version of the XCUItest driver between version 6.0.0 and the current version 7.9.1, all tests that
+result in an iOS system level dialog to appear will fail. The affected dialogs are shown below:</p>
+
+<p><img src="https://raw.githubusercontent.com/TestCentricity/tc_mobile_react_native_demo/main/.github/iOS_System_Dialogs.jpg" alt="iOS System Dialogs"></p>
+
+<h3 id="iphone-dynamic-island">iPhone Dynamic Island</h3>
+
+<p>If you choose to run these tests on a newer iPhone 14 or 15 series simulator or device, a number of tests may fail due to
+the screen header image being obscured by the iPhone&#39;s &quot;Dynamic Island&quot;. As described in the release notes for <a href="https://github.com/saucelabs/my-demo-app-rn/releases/tag/v1.3.0">version 1.3.0</a>
+of the Sauce Labs React Native Demo app, a long press (minimal half a second) on the header image is required to clear the
+sort state, cart contents, sign in data, and biometrics settings when establishing the base preconditions for many of the
+test scenarios. This problem can be avoided by running the tests on iPhones with a fixed camera notch (which does not obscure
+the majority of the header image), or iPhones or iPads without a camera notch or &quot;Dynamic Island&quot;.</p>
+
+<p><img src="https://raw.githubusercontent.com/TestCentricity/tc_mobile_react_native_demo/main/.github/iPhone_Dynamic_Island.jpg" alt="iPhone Dynamic Island"></p>
 
 <h2 id="instructions-for-running-tests">Instructions for running tests</h2>
 
@@ -179,6 +201,12 @@ that are supported (they are defined in <code>cucumber.yml</code>):</p>
 <pre class="code ruby"><code class="ruby">    bundle exec cucumber -p regress_android
 </code></pre>
 
+<p>If you are running locally hosted mobile tests using version 1.x of Appium server, you must include <code>-p appium_1x</code> in
+   your command line:</p>
+
+<pre class="code ruby"><code class="ruby">    bundle exec cucumber -p regress_ios -p appium_1x
+</code></pre>
+
 <p>ℹ️ <strong>NOTE:</strong>
     * Appium will automatically be started prior to tests being run on locally hosted simulators.</p>
 
@@ -210,7 +238,7 @@ can be accessed from the <code>index.html</code> file within the <code>doc</code
 </div></div>
 
       <div id="footer">
-  Generated on Fri Mar 29 14:05:23 2024 by
+  Generated on Fri Apr  5 16:31:42 2024 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.36 (ruby-3.0.0).
 </div>
