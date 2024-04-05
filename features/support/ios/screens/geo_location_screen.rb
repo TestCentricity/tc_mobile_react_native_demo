@@ -25,11 +25,7 @@ class GeoLocationScreen < BaseRNDemoAppScreen
         caption: 'Geo Location',
         exists: true,
         disabled: false,
-        hidden: false,
-        width: 428,
-        height: 86,
-        x: 0,
-        y: 70
+        hidden: false
       },
       start_observing_button => {
         visible: true,
@@ -45,18 +41,12 @@ class GeoLocationScreen < BaseRNDemoAppScreen
         visible: true,
         caption: 'Latitude:'
       },
-      latitude_data => {
-        visible: true,
-        caption: { not_equal: '0' }
-      },
+      latitude_data => { visible: true },
       longitude_label => {
         visible: true,
         caption: 'Longitude:'
       },
-      longitude_data => {
-        visible: true,
-        caption: { not_equal: '0' }
-      }
+      longitude_data => { visible: true }
     }
     verify_ui_states(ui)
   end

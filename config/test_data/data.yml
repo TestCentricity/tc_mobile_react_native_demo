@@ -19,7 +19,7 @@ Capabilities:
     :driver_name: :iphone_driver
     :capabilities:
       :platformName: :ios
-      :'appium:platformVersion': '15.4'
+      :'appium:platformVersion': '17.2'
       :'appium:deviceName': 'iPhone 13 Pro Max'
       :'appium:automationName': 'XCUITest'
       :'appium:app': '/Users/Shared/Test_Apps/iOS/MyRNDemoApp.app'

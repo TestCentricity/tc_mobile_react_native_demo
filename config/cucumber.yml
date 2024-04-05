@@ -28,8 +28,8 @@ report: <%= reports %> REPORTING=true
 
 bat_ios: -p bat -p ios_sim -p local
 bat_android: -p bat -p android_sim -p local
-regress_ios: -p ios_sim -p local
-regress_android: -p android_sim -p local
+regress_ios: -p regress -p ios_sim -p local
+regress_android: -p regress -p android_sim -p local
 
 
 #==============
@@ -52,6 +52,7 @@ portrait:  ORIENTATION=portrait
 # profile to start Appium Server prior to running mobile browser tests on iOS or Android simulators or physical devices
 #==============
 run_appium: APPIUM_SERVER=run
+appium_1x: APPIUM_SERVER_VERSION=1
 
 
 #==============

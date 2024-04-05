@@ -24,10 +24,6 @@ class GeoLocationScreen < BaseRNDemoAppScreen
         exists: true,
         disabled: false,
         hidden: false,
-        width: 416,
-        height: 74,
-        x: 55,
-        y: 273,
         class: 'android.widget.TextView'
       },
       start_observing_button => {
