@@ -82,7 +82,7 @@ result in an iOS system level dialog to appear will fail. The affected dialogs a
 
 ### iPhone Dynamic Island
 
-If you choose to run these tests on a newer iPhone 14 or 15 series simulator or device, a number of tests may fail due to
+If you choose to run these tests on a newer iPhone 14 Pro or 15 series simulator or device, a number of tests may fail due to
 the screen header image being obscured by the iPhone's "Dynamic Island". As described in the release notes for [version 1.3.0](https://github.com/saucelabs/my-demo-app-rn/releases/tag/v1.3.0)
 of the Sauce Labs React Native Demo app, a long press (minimal half a second) on the header image is required to clear the
 sort state, cart contents, sign in data, and biometrics settings when establishing the base preconditions for many of the
