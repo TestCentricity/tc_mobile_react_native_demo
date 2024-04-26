@@ -74,7 +74,7 @@ and then edit the capabilities profiles in the `data.yml` file to change file pa
 
 Refer to [this wiki page](https://github.com/TestCentricity/testcentricity_mobile/wiki/XCUItest-driver-bug-impacts-iOS-dialogs-managed-by-com.apple.springboard) for information on a bug with the latest versions of the XCUItest driver that affects
 Appium's ability to interact with and verify iOS system level modal dialogs. If you are attempting to run these tests using
-Appium 2.x with a version of the XCUItest driver between version 6.0.0 and the current version 7.9.1, all tests that
+Appium 2.x with a version of the XCUItest driver between version 6.0.0 and the current version 7.15.0, all tests that
 result in an iOS system level dialog to appear will fail. The affected dialogs are shown below:
 
 ![iOS System Dialogs](https://raw.githubusercontent.com/TestCentricity/tc_mobile_react_native_demo/main/.github/images/iOS_System_Dialogs.jpg)
