@@ -151,21 +151,21 @@ and then edit the capabilities profiles in the <code>data.yml</code> file to cha
 
 <p>Refer to <a href="https://github.com/TestCentricity/testcentricity_mobile/wiki/XCUItest-driver-bug-impacts-iOS-dialogs-managed-by-com.apple.springboard">this wiki page</a> for information on a bug with the latest versions of the XCUItest driver that affects
 Appium&#39;s ability to interact with and verify iOS system level modal dialogs. If you are attempting to run these tests using
-Appium 2.x with a version of the XCUItest driver between version 6.0.0 and the current version 7.9.1, all tests that
+Appium 2.x with a version of the XCUItest driver between version 6.0.0 and the current version 7.15.0, all tests that
 result in an iOS system level dialog to appear will fail. The affected dialogs are shown below:</p>
 
-<p><img src="https://raw.githubusercontent.com/TestCentricity/tc_mobile_react_native_demo/main/.github/iOS_System_Dialogs.jpg" alt="iOS System Dialogs"></p>
+<p><img src="https://raw.githubusercontent.com/TestCentricity/tc_mobile_react_native_demo/main/.github/images/iOS_System_Dialogs.jpg" alt="iOS System Dialogs"></p>
 
 <h3 id="iphone-dynamic-island">iPhone Dynamic Island</h3>
 
-<p>If you choose to run these tests on a newer iPhone 14 or 15 series simulator or device, a number of tests may fail due to
+<p>If you choose to run these tests on a newer iPhone 14 Pro or 15 series simulator or device, a number of tests may fail due to
 the screen header image being obscured by the iPhone&#39;s &quot;Dynamic Island&quot;. As described in the release notes for <a href="https://github.com/saucelabs/my-demo-app-rn/releases/tag/v1.3.0">version 1.3.0</a>
 of the Sauce Labs React Native Demo app, a long press (minimal half a second) on the header image is required to clear the
 sort state, cart contents, sign in data, and biometrics settings when establishing the base preconditions for many of the
 test scenarios. This problem can be avoided by running the tests on iPhones with a fixed camera notch (which does not obscure
 the majority of the header image), or iPhones or iPads without a camera notch or &quot;Dynamic Island&quot;.</p>
 
-<p><img src="https://raw.githubusercontent.com/TestCentricity/tc_mobile_react_native_demo/main/.github/iPhone_Dynamic_Island.jpg" alt="iPhone Dynamic Island"></p>
+<p><img src="https://raw.githubusercontent.com/TestCentricity/tc_mobile_react_native_demo/main/.github/images/iPhone_Dynamic_Island.jpg" alt="iPhone Dynamic Island"></p>
 
 <h2 id="instructions-for-running-tests">Instructions for running tests</h2>
 
@@ -238,7 +238,7 @@ can be accessed from the <code>index.html</code> file within the <code>doc</code
 </div></div>
 
       <div id="footer">
-  Generated on Fri Apr  5 16:31:42 2024 by
+  Generated on Fri Apr 26 12:35:05 2024 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.36 (ruby-3.0.0).
 </div>
