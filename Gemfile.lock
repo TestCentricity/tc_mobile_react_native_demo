@@ -63,7 +63,9 @@ GEM
     method_source (1.1.0)
     mini_mime (1.1.5)
     multi_test (1.1.0)
-    nokogiri (1.16.4-x86_64-darwin)
+    nokogiri (1.16.5-x86_64-darwin)
+      racc (~> 1.4)
+    nokogiri (1.16.5-x86_64-linux)
       racc (~> 1.4)
     power_assert (2.0.3)
     pry (0.14.2)
@@ -105,6 +107,7 @@ GEM
 
 PLATFORMS
   x86_64-darwin-21
+  x86_64-linux
 
 DEPENDENCIES
   cucumber (= 9.2.0)
