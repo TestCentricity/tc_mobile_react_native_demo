@@ -23,6 +23,8 @@ Capabilities:
       :'appium:deviceName': 'iPhone 13 Pro Max'
       :'appium:automationName': 'XCUITest'
       :'appium:app': '/Users/Shared/Test_Apps/iOS/MyRNDemoApp.app'
+      :'appium:maxTypingFrequency': 15
+      :'appium:respectSystemAlerts': true
       :'appium:noReset': true
   android_phone:
     :device_type: :phone

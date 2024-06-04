@@ -7,7 +7,7 @@ class ProductsScreen < BaseRNDemoAppScreen
 
   # Products screen UI elements
   button  :sort_button,  { name: 'sort button'}
-  element :store_item,   { xpath: '//XCUIElementTypeOther[@name="store item"]' }
+  element :store_item,   { predicate: 'name == "store item"' }
   list    :product_grid, { xpath: '(//XCUIElementTypeScrollView)[2]' }
   sections product_grid_item: ProductGridItem,
            sort_by_menu:      SortByMenu
