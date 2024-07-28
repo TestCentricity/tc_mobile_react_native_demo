@@ -1,14 +1,14 @@
 # tc_mobile_react_native_demo
 
-This is a Cucumber based sample test suite and framework utilizing the TestCentricity™ Mobile gem and a screen-object
+This is a Cucumber based sample test suite and framework utilizing the TestCentricity™ For Mobile gem and a screen-object
 model architecture for native mobile app functional testing of the [Sauce Labs React Native Demo app](https://github.com/saucelabs/my-demo-app-rn). The tests in
 this example project are designed to support testing of [version 1.3.0](https://github.com/saucelabs/my-demo-app-rn/releases/tag/v1.3.0) of the Sauce Labs React Native Demo app.
 
 ![React Native Demo app](https://raw.githubusercontent.com/TestCentricity/tc_mobile_react_native_demo/main/.github/images/RN_Demo_app.png)
 
 The primary purpose of this example test suite and framework is to demonstrate how to implement a cross platform comprehensive
-automated testing solution for a React Native iOS and Android mobile app using Cucumber, Appium, and the TestCentricity™ Mobile
-gem. This test suite includes scenarios for interactive with and validating the following functionality:
+automated testing solution for a React Native iOS and Android mobile app using Cucumber, Appium, and the TestCentricity™ For
+Mobile gem. This test suite includes scenarios for interactive with and validating the following functionality:
   * Choosing products and adding them to a shopping cart
   * Completing orders once shipping and payment data have been provided
   * Populating forms with data
@@ -30,9 +30,9 @@ testcentricity_mobile  [![Gem Version](https://badge.fury.io/rb/testcentricity_m
 
 ## Supporting Documentation
 
-[TestCentricity Mobile Framework - testcentricity_mobile gem](https://rubygems.org/gems/testcentricity_mobile)
+[TestCentricity For Mobile Framework - testcentricity_mobile gem](https://rubygems.org/gems/testcentricity_mobile)
 
-[TestCentricity Mobile - documentation](http://www.rubydoc.info/gems/testcentricity_mobile/)
+[TestCentricity For Mobile - documentation](http://www.rubydoc.info/gems/testcentricity_mobile/)
 
 
 ## Prerequisites to running tests:
