@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 
-require 'parallel_tests'
 require 'require_all'
 require 'testcentricity_mobile'
 

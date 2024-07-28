@@ -14,8 +14,6 @@
 
   <link rel="stylesheet" href="css/common.css" type="text/css" />
 
-  <link rel="stylesheet" href="css/cucumber.css" type="text/css" />
-
 <script type="text/javascript">
   pathId = "CartScreen";
   relpath = '';
@@ -25,8 +23,6 @@
   <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
 
   <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
-
-  <script type="text/javascript" charset="utf-8" src="js/cucumber.js"></script>
 
 
   </head>
@@ -49,8 +45,8 @@
 
         <div id="search">
   
-    <a class="full_list_link" id="feature_list_link"
-        href="feature_list.html">
+    <a class="full_list_link" id="class_list_link"
+        href="class_list.html">
 
         <svg width="24" height="24">
           <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
@@ -258,7 +254,7 @@
 <span class='kw'>def</span> <span class='id identifier rubyid_initialize'>initialize</span>
   <span class='kw'>super</span>
   <span class='comment'># define the list item element for the Cart list object
-</span>  <span class='id identifier rubyid_list_elements'>list_elements</span> <span class='op'>=</span> <span class='lbrace'>{</span> <span class='label'>list_item:</span> <span class='lbrace'>{</span> <span class='label'>xpath:</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>//XCUIElementTypeOther[@name=&quot;product row&quot;]</span><span class='tstring_end'>&#39;</span></span> <span class='rbrace'>}</span> <span class='rbrace'>}</span>
+</span>  <span class='id identifier rubyid_list_elements'>list_elements</span> <span class='op'>=</span> <span class='lbrace'>{</span> <span class='label'>list_item:</span> <span class='lbrace'>{</span> <span class='label'>predicate:</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>name == &quot;product row&quot;</span><span class='tstring_end'>&#39;</span></span> <span class='rbrace'>}</span> <span class='rbrace'>}</span>
   <span class='id identifier rubyid_cart_list'>cart_list</span><span class='period'>.</span><span class='id identifier rubyid_define_list_elements'>define_list_elements</span><span class='lparen'>(</span><span class='id identifier rubyid_list_elements'>list_elements</span><span class='rparen'>)</span>
   <span class='comment'># associate the Cart List Item indexed section object with the Cart list object
 </span>  <span class='id identifier rubyid_cart_list_item'>cart_list_item</span><span class='period'>.</span><span class='id identifier rubyid_set_list_index'>set_list_index</span><span class='lparen'>(</span><span class='id identifier rubyid_cart_list'>cart_list</span><span class='rparen'>)</span>
@@ -274,9 +270,9 @@
 </div>
 
       <div id="footer">
-  Generated on Fri Apr 26 12:35:06 2024 by
+  Generated on Sun Jul 28 12:04:22 2024 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.9.36 (ruby-3.0.0).
+  0.9.36 (ruby-3.1.0).
 </div>
 
     </div>
