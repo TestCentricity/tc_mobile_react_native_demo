@@ -21,7 +21,7 @@ GEM
     coderay (1.1.3)
     coercible (1.0.0)
       descendants_tracker (~> 0.0.1)
-    concurrent-ruby (1.3.3)
+    concurrent-ruby (1.3.4)
     cucumber (9.2.0)
       builder (~> 3.2)
       cucumber-ci-environment (> 9, < 11)
@@ -43,8 +43,8 @@ GEM
       bigdecimal
     cucumber-gherkin (27.0.0)
       cucumber-messages (>= 19.1.4, < 23)
-    cucumber-html-formatter (21.6.0)
-      cucumber-messages (> 19, < 25)
+    cucumber-html-formatter (21.7.0)
+      cucumber-messages (> 19, < 27)
     cucumber-messages (22.0.0)
     cucumber-tag-expressions (6.1.0)
     descendants_tracker (0.0.4)
@@ -73,10 +73,10 @@ GEM
       method_source (~> 1.0)
     racc (1.8.1)
     require_all (1.5.0)
-    rexml (3.3.4)
+    rexml (3.3.6)
       strscan
     rubyzip (2.3.2)
-    selenium-webdriver (4.23.0)
+    selenium-webdriver (4.24.0)
       base64 (~> 0.2)
       logger (~> 1.4)
       rexml (~> 3.2, >= 3.2.5)
@@ -87,14 +87,14 @@ GEM
       ffi (~> 1.1)
     test-unit (3.6.2)
       power_assert
-    testcentricity_mobile (4.0.11)
+    testcentricity_mobile (4.0.12)
       appium_lib (~> 15.2.2)
       childprocess
       chronic (= 0.10.2)
       faker
       i18n
       json
-      selenium-webdriver (= 4.23.0)
+      selenium-webdriver (= 4.24.0)
       test-unit
       virtus
     thread_safe (0.3.6)
@@ -115,7 +115,7 @@ DEPENDENCIES
   cucumber (= 9.2.0)
   pry
   require_all (= 1.5.0)
-  testcentricity_mobile (= 4.0.11)
+  testcentricity_mobile (= 4.0.12)
 
 BUNDLED WITH
    2.3.26
