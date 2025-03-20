@@ -1,11 +1,11 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    appium_lib (15.3.0)
-      appium_lib_core (~> 9.2, >= 9.2.1)
+    appium_lib (16.0.1)
+      appium_lib_core (>= 9.2.1, < 11.0)
       nokogiri (~> 1.8, >= 1.8.1)
       tomlrb (>= 1.1, < 3.0)
-    appium_lib_core (9.5.0)
+    appium_lib_core (10.0.0)
       faye-websocket (~> 0.11.0)
       selenium-webdriver (~> 4.21)
     axiom-types (0.1.1)
@@ -43,13 +43,13 @@ GEM
       bigdecimal
     cucumber-gherkin (27.0.0)
       cucumber-messages (>= 19.1.4, < 23)
-    cucumber-html-formatter (21.8.0)
-      cucumber-messages (> 19, < 27)
+    cucumber-html-formatter (21.9.0)
+      cucumber-messages (> 19, < 28)
     cucumber-messages (22.0.0)
-    cucumber-tag-expressions (6.1.1)
+    cucumber-tag-expressions (6.1.2)
     descendants_tracker (0.0.4)
       thread_safe (~> 0.3, >= 0.3.1)
-    diff-lcs (1.5.1)
+    diff-lcs (1.6.0)
     eventmachine (1.2.7)
     faker (3.5.1)
       i18n (>= 1.8.11, < 2)
@@ -60,12 +60,12 @@ GEM
     i18n (1.14.7)
       concurrent-ruby (~> 1.0)
     ice_nine (0.11.2)
-    json (2.9.1)
-    logger (1.6.5)
+    json (2.10.2)
+    logger (1.6.6)
     method_source (1.1.0)
     mini_mime (1.1.5)
     multi_test (1.1.0)
-    nokogiri (1.18.2-x86_64-darwin)
+    nokogiri (1.18.5-x86_64-darwin)
       racc (~> 1.4)
     power_assert (2.0.5)
     pry (0.15.2)
@@ -73,9 +73,9 @@ GEM
       method_source (~> 1.0)
     racc (1.8.1)
     require_all (1.5.0)
-    rexml (3.4.0)
+    rexml (3.4.1)
     rubyzip (2.4.1)
-    selenium-webdriver (4.28.0)
+    selenium-webdriver (4.29.1)
       base64 (~> 0.2)
       logger (~> 1.4)
       rexml (~> 3.2, >= 3.2.5)
@@ -85,14 +85,14 @@ GEM
       ffi (~> 1.1)
     test-unit (3.6.7)
       power_assert
-    testcentricity_mobile (4.1.0)
-      appium_lib (~> 15.3.0)
+    testcentricity_mobile (4.1.1)
+      appium_lib (~> 16.0.1)
       childprocess
       chronic (= 0.10.2)
       faker
       i18n
       json
-      selenium-webdriver (= 4.28.0)
+      selenium-webdriver (= 4.29.1)
       test-unit
       virtus
     thread_safe (0.3.6)
@@ -114,7 +114,7 @@ DEPENDENCIES
   cucumber (= 9.2.1)
   pry
   require_all (= 1.5.0)
-  testcentricity_mobile (= 4.1.0)
+  testcentricity_mobile (= 4.1.1)
 
 BUNDLED WITH
    2.3.26
