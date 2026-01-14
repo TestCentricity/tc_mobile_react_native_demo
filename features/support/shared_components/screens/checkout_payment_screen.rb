@@ -25,7 +25,7 @@ module SharedCheckoutPaymentScreen
         visible: true,
         caption: 'Full Name*'
       },
-      payee_name_field => {
+      cardholder_name => {
         visible: true,
         enabled: true,
         placeholder: UserData.current.cardholder_name
@@ -34,7 +34,7 @@ module SharedCheckoutPaymentScreen
         visible: true,
         caption: 'Card Number*'
       },
-      card_number_field => {
+      card_num => {
         visible: true,
         enabled: true,
         placeholder: '3258 1265 7568 789'
@@ -43,7 +43,7 @@ module SharedCheckoutPaymentScreen
         visible: true,
         caption: 'Expiration Date*'
       },
-      expiration_field => {
+      expiry => {
         visible: true,
         enabled: true,
         placeholder: '03/25'
@@ -52,7 +52,7 @@ module SharedCheckoutPaymentScreen
         visible: true,
         caption: 'Security Code*'
       },
-      security_code_field => {
+      cvv => {
         visible: true,
         enabled: true,
         placeholder: UserData.current.cvv
@@ -66,13 +66,13 @@ module SharedCheckoutPaymentScreen
         visible: true,
         caption: 'My billing address is the same as my shipping address.'
       },
-      recipient_name_field => { visible: false },
-      address1_field => { visible: false },
-      address2_field => { visible: false },
-      city_field => { visible: false },
-      state_field => { visible: false },
-      zip_code_field => { visible: false },
-      country_field => { visible: false },
+      bill_name => { visible: false },
+      bill_address_1 => { visible: false },
+      bill_address_2 => { visible: false },
+      bill_city => { visible: false },
+      bill_state => { visible: false },
+      bill_zip_code => { visible: false },
+      bill_country => { visible: false },
       review_order_button => {
         visible: true,
         enabled: true,
@@ -88,10 +88,10 @@ module SharedCheckoutPaymentScreen
 
   def enter_data
     fields = {
-      payee_name_field => UserData.current.cardholder_name,
-      card_number_field => UserData.current.card_num,
-      expiration_field => UserData.current.expiry,
-      security_code_field => UserData.current.cvv
+      cardholder_name => UserData.current.cardholder_name,
+      card_num => UserData.current.card_num,
+      expiry => UserData.current.expiry,
+      cvv => UserData.current.cvv
     }
     populate_data_fields(fields)
 
@@ -99,16 +99,7 @@ module SharedCheckoutPaymentScreen
       # click on header to hide iOS keyboard which obscures the Billing Address checkbox
       header_label.click
       bill_address_check.click
-      fields = {
-        recipient_name_field => UserData.current.bill_name,
-        address1_field => UserData.current.bill_address_1,
-        address2_field => UserData.current.bill_address_2,
-        city_field => UserData.current.bill_city,
-        state_field => UserData.current.bill_state,
-        zip_code_field => UserData.current.bill_zip_code,
-        country_field => UserData.current.bill_country
-      }
-      populate_data_fields(fields)
+      populate_data_fields(UserData.current.attributes)
     end
     # click to hide iOS keyboard which obscures the Review Order button
     checkbox_label.click

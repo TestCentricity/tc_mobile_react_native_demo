@@ -17,7 +17,7 @@ module SharedCheckoutAddressScreen
         visible: true,
         caption: 'Full Name*'
       },
-      fullname_field => {
+      full_name => {
         visible: true,
         enabled: true,
         placeholder: UserData.current.full_name
@@ -26,7 +26,7 @@ module SharedCheckoutAddressScreen
         visible: true,
         caption: 'Address Line 1*'
       },
-      address1_field => {
+      ship_address_1 => {
         visible: true,
         enabled: true,
         placeholder: UserData.current.ship_address_1
@@ -35,7 +35,7 @@ module SharedCheckoutAddressScreen
         visible: true,
         caption: 'Address Line 2'
       },
-      address2_field => {
+      ship_address_2 => {
         visible: true,
         enabled: true,
         placeholder: UserData.current.ship_address_2
@@ -44,7 +44,7 @@ module SharedCheckoutAddressScreen
         visible: true,
         caption: 'City*'
       },
-      city_field => {
+      ship_city => {
         visible: true,
         enabled: true,
         placeholder: UserData.current.ship_city
@@ -53,7 +53,7 @@ module SharedCheckoutAddressScreen
         visible: true,
         caption: 'State/Region'
       },
-      state_field => {
+      ship_state => {
         visible: true,
         enabled: true,
         placeholder: UserData.current.ship_state
@@ -62,7 +62,7 @@ module SharedCheckoutAddressScreen
         visible: true,
         caption: 'Zip Code*'
       },
-      zip_code_field => {
+      ship_zip_code => {
         visible: true,
         enabled: true,
         placeholder: UserData.current.ship_zip_code
@@ -71,7 +71,7 @@ module SharedCheckoutAddressScreen
         visible: true,
         caption: 'Country*'
       },
-      country_field => {
+      ship_country => {
         visible: true,
         enabled: true,
         placeholder: UserData.current.ship_country
@@ -91,16 +91,7 @@ module SharedCheckoutAddressScreen
   end
 
   def enter_data
-    fields = {
-      fullname_field => UserData.current.full_name,
-      address1_field => UserData.current.ship_address_1,
-      address2_field => UserData.current.ship_address_2,
-      city_field => UserData.current.ship_city,
-      state_field => UserData.current.ship_state,
-      zip_code_field => UserData.current.ship_zip_code,
-      country_field => UserData.current.ship_country,
-    }
-    populate_data_fields(fields)
+    populate_data_fields(UserData.current.attributes)
     # click on header to hide iOS keyboard which obscures the To Payment button
     header_label.click
     to_payment_button.tap

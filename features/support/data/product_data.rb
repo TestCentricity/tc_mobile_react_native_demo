@@ -19,15 +19,8 @@ class ProductData < TestCentricity::DataPresenter
   attribute :quantity, Integer
 
   def initialize(data)
-    @id            = data[:id]
-    @name          = data[:name]
-    @description   = data[:description]
-    @price         = data[:price]
-    @review        = data[:review]
-    @colors        = data[:colors]
-    @default_color = data[:default_color]
+    super
     @quantity = 1
     @chosen_color = nil
-    super
   end
 end

@@ -31,8 +31,13 @@ Before do |scenario|
   unless $initialized
     $initialized = true
     # connect to Appium driver and install app
-    capabilities.find_capabilities(ENV['W3C_CAPS'])
-    AppiumConnect.initialize_appium(Capabilities.current.caps)
+    caps = if ENV['W3C_CAPS']
+             capabilities.find_capabilities(ENV['W3C_CAPS'])
+             Capabilities.current.caps
+           else
+             nil
+           end
+    AppiumConnect.initialize_appium(caps)
     # HTML report header information if reporting is enabled
     log Environ.report_header if ENV['REPORTING']
   end

@@ -21,17 +21,6 @@ class CartData < TestCentricity::DataPresenter
   attribute :cart_items, Array
   attribute :order_items, Array
 
-  def initialize(data)
-    @cart_items_deep_link = data[:cart_items_deep_link]
-    @num_items            = data[:num_items]
-    @total_quantity       = data[:total_quantity]
-    @total_price          = data[:total_price]
-    @delivery_price       = data[:delivery_price]
-    @cart_items           = data[:cart_items]
-    @order_items          = data[:order_items]
-    super
-  end
-
   def product_ids
     ids = []
     products = cart_items_deep_link.split(',')

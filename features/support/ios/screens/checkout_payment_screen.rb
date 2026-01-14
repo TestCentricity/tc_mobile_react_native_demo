@@ -6,17 +6,17 @@ class CheckoutPaymentScreen < BaseRNDemoAppScreen
   trait(:deep_link)      { 'checkout-payment' }
 
   # Checkout Payment screen UI elements
-  textfields payee_name_field:     { xpath: '(//XCUIElementTypeTextField[@name="Full Name* input field"])[1]' },
-             card_number_field:    { accessibility_id: 'Card Number* input field' },
-             expiration_field:     { accessibility_id: 'Expiration Date* input field' },
-             security_code_field:  { accessibility_id: 'Security Code* input field' },
-             recipient_name_field: { xpath: '(//XCUIElementTypeTextField[@name="Full Name* input field"])[2]' },
-             address1_field:       { accessibility_id: 'Address Line 1* input field' },
-             address2_field:       { accessibility_id: 'Address Line 2 input field' },
-             city_field:           { accessibility_id: 'City* input field' },
-             state_field:          { accessibility_id: 'State/Region input field' },
-             zip_code_field:       { accessibility_id: 'Zip Code* input field' },
-             country_field:        { accessibility_id: 'Country* input field' }
+  textfields cardholder_name:      { xpath: '(//XCUIElementTypeTextField[@name="Full Name* input field"])[1]' },
+             card_num:             { accessibility_id: 'Card Number* input field' },
+             expiry:               { accessibility_id: 'Expiration Date* input field' },
+             cvv:                  { accessibility_id: 'Security Code* input field' },
+             bill_name:            { xpath: '(//XCUIElementTypeTextField[@name="Full Name* input field"])[2]' },
+             bill_address_1:       { accessibility_id: 'Address Line 1* input field' },
+             bill_address_2:       { accessibility_id: 'Address Line 2 input field' },
+             bill_city:            { accessibility_id: 'City* input field' },
+             bill_state:           { accessibility_id: 'State/Region input field' },
+             bill_zip_code:        { accessibility_id: 'Zip Code* input field' },
+             bill_country:         { accessibility_id: 'Country* input field' }
   checkbox   :bill_address_check,  { xpath: '//XCUIElementTypeOther[contains(@name, "checkbox")]'}
   button     :review_order_button, { accessibility_id: 'Review Order button' }
   labels     payment_method_label: { accessibility_id: 'Enter a payment method' },
