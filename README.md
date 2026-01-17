@@ -119,11 +119,6 @@ that are supported (they are defined in `cucumber.yml`):
 
         bundle exec cucumber -p regress_android
 
-   If you are running locally hosted mobile tests using version 1.x of Appium server, you must include `-p appium_1x` in
-   your command line:
-
-        bundle exec cucumber -p regress_ios -p appium_1x
-
    ℹ️ **NOTE:**
     * Appium will automatically be started prior to tests being run on locally hosted simulators.
 
