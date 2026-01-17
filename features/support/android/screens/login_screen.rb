@@ -12,7 +12,7 @@ class LoginScreen < BaseRNDemoAppScreen
              username_error: { accessibility_id: 'Username-error-message' },
              password_error: { accessibility_id: 'Password-error-message' },
              generic_error:  { accessibility_id: 'generic-error-message' }
-  textfields username_field: { accessibility_id: 'Username input field' },
-             password_field: { accessibility_id: 'Password input field' }
+  textfields username:       { accessibility_id: 'Username input field' },
+             password:       { accessibility_id: 'Password input field' }
   button     :login_button,  { accessibility_id: 'Login button' }
 end

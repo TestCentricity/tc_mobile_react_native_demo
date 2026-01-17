@@ -1,7 +1,8 @@
 # User data sourcing object
 class UserDataSource < TestCentricity::DataSource
   def find_user(node_name)
-    UserData.current = UserData.new(environs.read('User_creds', node_name))
+    options = { keys_as_symbols: true }
+    UserData.current = UserData.new(environs.read('User_creds', node_name, options))
   end
 end
 
@@ -28,28 +29,4 @@ class UserData < TestCentricity::DataPresenter
   attribute :bill_state, String
   attribute :bill_zip_code, String
   attribute :bill_country, String
-
-  def initialize(data)
-    @username = data[:username]
-    @password = data[:password]
-    @full_name = data[:full_name]
-    @ship_address_1 = data[:ship_address_1]
-    @ship_address_2 = data[:ship_address_2]
-    @ship_city = data[:ship_city]
-    @ship_state = data[:ship_state]
-    @ship_zip_code = data[:ship_zip_code]
-    @ship_country = data[:ship_country]
-    @cardholder_name = data[:cardholder_name]
-    @card_num = data[:card_num]
-    @expiry = data[:expiry]
-    @cvv = data[:cvv]
-    @bill_name = data[:bill_name]
-    @bill_address_1 = data[:bill_address_1]
-    @bill_address_2 = data[:bill_address_2]
-    @bill_city = data[:bill_city]
-    @bill_state = data[:bill_state]
-    @bill_zip_code = data[:bill_zip_code]
-    @bill_country = data[:bill_country]
-    super
-  end
 end

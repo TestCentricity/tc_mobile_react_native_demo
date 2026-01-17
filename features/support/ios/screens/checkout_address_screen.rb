@@ -6,13 +6,13 @@ class CheckoutAddressScreen < BaseRNDemoAppScreen
   trait(:deep_link)      { 'checkout-address' }
 
   # Checkout Address screen UI elements
-  textfields fullname_field:     { accessibility_id: 'Full Name* input field' },
-             address1_field:     { accessibility_id: 'Address Line 1* input field' },
-             address2_field:     { accessibility_id: 'Address Line 2 input field' },
-             city_field:         { accessibility_id: 'City* input field' },
-             state_field:        { accessibility_id: 'State/Region input field' },
-             zip_code_field:     { accessibility_id: 'Zip Code* input field' },
-             country_field:      { accessibility_id: 'Country* input field' }
+  textfields full_name:          { accessibility_id: 'Full Name* input field' },
+             ship_address_1:     { accessibility_id: 'Address Line 1* input field' },
+             ship_address_2:     { accessibility_id: 'Address Line 2 input field' },
+             ship_city:          { accessibility_id: 'City* input field' },
+             ship_state:         { accessibility_id: 'State/Region input field' },
+             ship_zip_code:      { accessibility_id: 'Zip Code* input field' },
+             ship_country:       { accessibility_id: 'Country* input field' }
   labels     ship_address_label: { accessibility_id: 'Enter a shipping address' },
              full_name_label:    { accessibility_id: 'Full Name*' },
              address1_label:     { accessibility_id: 'Address Line 1*' },
